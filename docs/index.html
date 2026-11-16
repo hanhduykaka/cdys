@@ -132,7 +132,7 @@ function githubPagesRepository(){
 }
 async function githubDirectory(owner,repo,directory=''){
  const path=directory?`/${directory}`:'';
- const response=await fetch(`https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/contents${path}`);
+ const response=await fetch(`https://api.github.com/repos/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/contents${path}`,{cache:'no-store'});
  if(!response.ok)throw new Error(`GitHub returned ${response.status}`);
  return response.json();
 }
@@ -141,9 +141,10 @@ async function discoverGithubQuestions(){
  if(!repository)return;
  try{
   let entries=await githubDirectory(repository.owner,repository.repo);
-  if(!entries.some(item=>item.name==='index.html')){
-   const docs=entries.find(item=>item.name==='docs'&&item.type==='dir');
-   if(docs)entries=await githubDirectory(repository.owner,repository.repo,'docs');
+  const docs=entries.find(item=>item.name==='docs'&&item.type==='dir');
+  if(docs){
+   const docsEntries=await githubDirectory(repository.owner,repository.repo,'docs');
+   if(docsEntries.some(item=>item.name==='index.html'))entries=docsEntries;
   }
   serverSubjects=entries
    .filter(item=>item.type==='file'&&item.name.toLowerCase().endsWith('.json'))
@@ -282,7 +283,7 @@ async function loadSubject(){
  if(!id){allQuestions=[];message.textContent=source==='local'?'Chưa có bộ câu hỏi trên thiết bị. Hãy nhập tệp JSON.':serverDiscoveryError;updateCategories();updatePageTitle();return;}
  try{
   if(source==='server'){
-   const response=await fetch(encodeURIComponent(id));
+   const response=await fetch(encodeURIComponent(id),{cache:'no-store'});
    if(!response.ok) throw new Error(`Không thể tải tệp câu hỏi (${response.status}).`);
    allQuestions=await response.json();
   }else allQuestions=id===wrongQuestionsSubject?getWrongQuestions():getLocalSets()[id]||[];
