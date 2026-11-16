@@ -1,0 +1,243 @@
+[
+  {
+    "id": "TOHOP_01",
+    "topic": "To hop",
+    "question": "Một lớp có 12 sinh viên. Có bao nhiêu cách chọn 3 sinh viên tham gia nghiên cứu khoa học?",
+    "options": [
+      "$$A_{12}^{3}=12\\times11\\times10$$",
+      "$$C_{12}^{3}$$",
+      "$$12^3$$",
+      "$$12\\times3$$"
+    ],
+    "answer": 1,
+    "explanation": "$$\\text{Chọn 3 sinh viên, không xét thứ tự nên số cách là }C_{12}^{3}.$$"
+  },
+
+  {
+    "id": "TOHOP_02",
+    "topic": "To hop",
+    "question": "Từ nhóm gồm 5 nam và 4 nữ, chọn ngẫu nhiên 3 người. Số cách chọn là:",
+    "options": [
+      "$$C_{9}^{3}$$",
+      "$$A_{9}^{3}$$",
+      "$$C_{5}^{3}+C_{4}^{3}$$",
+      "$$5\\times4\\times3$$"
+    ],
+    "answer": 0,
+    "explanation": "$$\\text{Tổng cộng có }9\\text{ người. Chọn }3\\text{ người, không xét thứ tự nên số cách là }C_{9}^{3}.$$"
+  },
+
+  {
+    "id": "TOHOP_03",
+    "topic": "To hop",
+    "question": "Một tổ gồm 6 nam và 4 nữ. Chọn 4 người sao cho có đúng 2 nam và 2 nữ. Biểu thức tính số cách chọn là:",
+    "options": [
+      "$$C_{10}^{4}$$",
+      "$$C_{6}^{2}.C_{4}^{2}$$",
+      "$$A_{6}^{2}.A_{4}^{2}$$",
+      "$$C_{6}^{2}+C_{4}^{2}$$"
+    ],
+    "answer": 1,
+    "explanation": "$$\\text{Chọn }2\\text{ nam trong }6\\text{ nam và }2\\text{ nữ trong }4\\text{ nữ.}$$\n$$m=C_{6}^{2}.C_{4}^{2}$$"
+  },
+
+  {
+    "id": "TOHOP_04",
+    "topic": "To hop",
+    "question": "Một bệnh viện có 8 bác sĩ. Cần thành lập tổ trực gồm đúng 3 bác sĩ. Có bao nhiêu cách chọn?",
+    "options": [
+      "$$C_{8}^{3}$$",
+      "$$A_{8}^{3}$$",
+      "$$8^3$$",
+      "$$8\\times3$$"
+    ],
+    "answer": 0,
+    "explanation": "$$\\text{Chọn }3\\text{ bác sĩ từ }8\\text{ bác sĩ, không xét vị trí nên dùng tổ hợp }C_{8}^{3}. $$"
+  },
+
+  {
+    "id": "TOHOP_05",
+    "topic": "To hop",
+    "question": "Có 7 mẫu máu khác nhau. Số cách lấy đồng thời 4 mẫu để xét nghiệm là:",
+    "options": [
+      "$$C_{7}^{4}$$",
+      "$$A_{7}^{4}$$",
+      "$$7^4$$",
+      "$$7\\times6\\times5\\times4$$"
+    ],
+    "answer": 0,
+    "explanation": "$$\\text{Lấy đồng thời nên không xét thứ tự.}$$\n$$m=C_{7}^{4}$$"
+  },
+
+  {
+    "id": "TOHOP_06",
+    "topic": "To hop",
+    "question": "Một nhóm nghiên cứu gồm 5 bác sĩ và 7 điều dưỡng. Chọn 5 người sao cho có đúng 2 bác sĩ. Biểu thức đúng là:",
+    "options": [
+      "$$C_{5}^{2}.C_{7}^{3}$$",
+      "$$C_{12}^{5}$$",
+      "$$C_{5}^{2}+C_{7}^{3}$$",
+      "$$A_{5}^{2}.A_{7}^{3}$$"
+    ],
+    "answer": 0,
+    "explanation": "$$\\text{Chọn }2\\text{ bác sĩ trong }5\\text{ bác sĩ và }3\\text{ điều dưỡng trong }7\\text{ điều dưỡng.}$$\n$$m=C_{5}^{2}.C_{7}^{3}$$"
+  },
+  
+  {
+    "id": "BIENCO_01",
+    "topic": "Bien co",
+    "question": "Gieo một xúc xắc một lần. Gọi A là biến cố: \"Xuất hiện số chẵn\". Biến cố đối lập của A là:",
+    "options": [
+      "Xuất hiện số lẻ",
+      "Xuất hiện số chẵn",
+      "Xuất hiện số lớn hơn 3",
+      "Xuất hiện số nhỏ hơn 4"
+    ],
+    "answer": 0,
+    "explanation": "Biến cố đối lập của A là biến cố A không xảy ra. Nếu A là 'xuất hiện số chẵn' thì biến cố đối lập là 'xuất hiện số lẻ'."
+  },
+
+  {
+    "id": "BIENCO_02",
+    "topic": "Bien co",
+    "question": "Gieo một xúc xắc. Gọi A là biến cố \"Xuất hiện số chẵn\". Gọi B là biến cố \"Xuất hiện số lớn hơn 4\". Biến cố A+B được hiểu là:",
+    "options": [
+      "A và B cùng xảy ra",
+      "A hoặc B xảy ra",
+      "A không xảy ra",
+      "B không xảy ra"
+    ],
+    "answer": 1,
+    "explanation": "Theo quy ước của môn học, A+B là biến cố 'A hoặc B xảy ra'."
+  },
+
+  {
+    "id": "BIENCO_03",
+    "topic": "Bien co",
+    "question": "Gieo một xúc xắc. Gọi A là biến cố \"Xuất hiện số chẵn\". Gọi B là biến cố \"Xuất hiện số lớn hơn 4\". Biến cố A.B được hiểu là:",
+    "options": [
+      "A hoặc B xảy ra",
+      "A không xảy ra",
+      "A và B cùng xảy ra",
+      "B không xảy ra"
+    ],
+    "answer": 2,
+    "explanation": "Theo quy ước của môn học, A.B là biến cố 'A và B cùng xảy ra'."
+  },
+
+  {
+    "id": "BIENCO_04",
+    "topic": "Bien co",
+    "question": "Gọi A là biến cố \"Bệnh nhân là nam\". Gọi B là biến cố \"Bệnh nhân là nữ\". Nhận xét nào đúng?",
+    "options": [
+      "A và B là cùng một biến cố",
+      "Nếu A xảy ra thì B vẫn có thể xảy ra",
+      "A và B không thể cùng xảy ra",
+      "A luôn xảy ra cùng B"
+    ],
+    "answer": 2,
+    "explanation": "Một bệnh nhân không thể vừa là nam vừa là nữ tại cùng một thời điểm nên A và B không thể cùng xảy ra."
+  },
+  {
+    "id": "XS_01",
+    "topic": "Xac suat",
+    "question": "Gieo một xúc xắc cân đối một lần. Tính xác suất xuất hiện mặt 6.",
+    "options": [
+      "$$n=6$$<br>$$m=1$$<br>$$P(A)=\\frac{m}{n}=\\frac{1}{6}$$",
+
+      "$$n=6$$<br>$$m=6$$<br>$$P(A)=\\frac{m}{n}=1$$",
+
+      "$$n=1$$<br>$$m=6$$<br>$$P(A)=\\frac{m}{n}=6$$",
+
+      "$$P(A)=\\frac{6}{1}$$"
+    ],
+    "answer": 0,
+    "explanation": "$$n=6,\\;m=1\\Rightarrow P(A)=\\frac{1}{6}$$"
+  },
+
+  {
+    "id": "XS_02",
+    "topic": "Xac suat",
+    "question": "Gieo một xúc xắc cân đối một lần. Tính xác suất xuất hiện số chẵn.",
+    "options": [
+      "$$n=6$$<br>$$m=2$$<br>$$P(A)=\\frac{2}{6}$$",
+
+      "$$n=6$$<br>$$m=3$$<br>$$P(A)=\\frac{3}{6}$$",
+
+      "$$n=3$$<br>$$m=6$$<br>$$P(A)=\\frac{6}{3}$$",
+
+      "$$n=6$$<br>$$m=1$$<br>$$P(A)=\\frac{1}{6}$$"
+    ],
+    "answer": 1,
+    "explanation": "$$A=\\{2,4,6\\}$$<br>$$m=3$$<br>$$P(A)=\\frac{3}{6}$$"
+  },
+
+  {
+    "id": "XS_03",
+    "topic": "Xac suat",
+    "question": "Một hộp có 5 bi trắng và 3 bi đỏ. Rút ngẫu nhiên 1 bi. Tính xác suất rút được bi đỏ.",
+    "options": [
+      "$$n=8$$<br>$$m=3$$<br>$$P(A)=\\frac{m}{n}=\\frac{3}{8}$$",
+
+      "$$n=5$$<br>$$m=3$$<br>$$P(A)=\\frac{3}{5}$$",
+
+      "$$n=8$$<br>$$m=5$$<br>$$P(A)=\\frac{5}{8}$$",
+
+      "$$P(A)=3$$"
+    ],
+    "answer": 0,
+    "explanation": "$$n=8$$<br>$$m=3$$<br>$$P(A)=\\frac{3}{8}$$"
+  },
+
+  {
+    "id": "XS_04",
+    "topic": "Xac suat",
+    "question": "Một tổ có 6 nam và 4 nữ. Chọn ngẫu nhiên 1 người. Tính xác suất chọn được nữ.",
+    "options": [
+      "$$n=10$$<br>$$m=4$$<br>$$P(A)=\\frac{m}{n}=\\frac{4}{10}$$",
+
+      "$$n=6$$<br>$$m=4$$<br>$$P(A)=\\frac{4}{6}$$",
+
+      "$$n=10$$<br>$$m=6$$<br>$$P(A)=\\frac{6}{10}$$",
+
+      "$$P(A)=4$$"
+    ],
+    "answer": 0,
+    "explanation": "$$n=10$$<br>$$m=4$$<br>$$P(A)=\\frac{4}{10}$$"
+  },
+
+  {
+    "id": "XS_05",
+    "topic": "Xac suat",
+    "question": "Một hộp có 6 bi trắng và 4 bi đỏ. Rút đồng thời 2 bi. Tính xác suất để cả hai bi đều màu đỏ.",
+    "options": [
+      "$$n=C_{10}^{2}$$<br>$$m=C_{4}^{2}$$<br>$$P(A)=\\frac{m}{n}$$<br>$$P(A)=\\frac{C_{4}^{2}}{C_{10}^{2}}$$",
+
+      "$$n=C_{10}^{2}$$<br>$$m=C_{6}^{2}$$<br>$$P(A)=\\frac{C_{6}^{2}}{C_{10}^{2}}$$",
+
+      "$$n=10\\times9$$<br>$$m=4\\times3$$<br>$$P(A)=\\frac{12}{90}$$",
+
+      "$$P(A)=\\frac{4}{10}$$"
+    ],
+    "answer": 0,
+    "explanation": "$$n=C_{10}^{2}$$<br>$$m=C_{4}^{2}$$<br>$$P(A)=\\frac{C_{4}^{2}}{C_{10}^{2}}$$"
+  },
+
+  {
+    "id": "XS_06",
+    "topic": "Xac suat",
+    "question": "Một tổ gồm 6 nam và 4 nữ. Chọn ngẫu nhiên 3 người. Tính xác suất chọn được đúng 2 nam và 1 nữ.",
+    "options": [
+      "$$n=C_{10}^{3}$$<br>$$m=C_{6}^{2}.C_{4}^{1}$$<br>$$P(A)=\\frac{m}{n}$$<br>$$P(A)=\\frac{C_{6}^{2}.C_{4}^{1}}{C_{10}^{3}}$$",
+
+      "$$n=C_{10}^{3}$$<br>$$m=C_{6}^{1}.C_{4}^{2}$$<br>$$P(A)=\\frac{m}{n}$$",
+
+      "$$n=C_{6}^{2}.C_{4}^{1}$$<br>$$m=C_{10}^{3}$$<br>$$P(A)=\\frac{m}{n}$$",
+
+      "$$P(A)=\\frac{6+4}{10}$$"
+    ],
+    "answer": 0,
+    "explanation": "$$n=C_{10}^{3}$$<br>$$m=C_{6}^{2}.C_{4}^{1}$$<br>$$P(A)=\\frac{C_{6}^{2}.C_{4}^{1}}{C_{10}^{3}}$$"
+  }
+
+]
