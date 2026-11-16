@@ -1,0 +1,3898 @@
+[
+  {
+    "id": 1,
+    "category": "Bacteriology",
+    "topic": "General",
+    "difficulty": "easy",
+    "question": "Mục đích chính của nhuộm Gram là gì?",
+    "options": [
+      "Xác định khả năng di động",
+      "Phân biệt vi khuẩn Gram dương và Gram âm",
+      "Phát hiện nha bào",
+      "Phát hiện kháng nguyên"
+    ],
+    "answer": 1,
+    "explanation": "Nhuộm Gram dựa trên cấu trúc thành tế bào để phân biệt Gram dương và Gram âm."
+  },
+  {
+    "id": 2,
+    "category": "Bacteriology",
+    "topic": "General",
+    "difficulty": "easy",
+    "question": "Vi khuẩn Gram dương giữ màu tím sau nhuộm Gram do có lớp nào phát triển mạnh?",
+    "options": [
+      "Lipopolysaccharide",
+      "Peptidoglycan",
+      "Acid nucleic",
+      "Capsid"
+    ],
+    "answer": 1,
+    "explanation": "Gram dương có lớp peptidoglycan dày giữ phức hợp crystal violet-iodine."
+  },
+  {
+    "id": 3,
+    "category": "Bacteriology",
+    "topic": "General",
+    "difficulty": "medium",
+    "question": "Nội độc tố của vi khuẩn Gram âm chủ yếu là thành phần nào?",
+    "options": [
+      "Protein A",
+      "Peptidoglycan",
+      "Lipid A",
+      "Flagellin"
+    ],
+    "answer": 2,
+    "explanation": "Lipid A của LPS là thành phần gây độc chính."
+  },
+  {
+    "id": 4,
+    "category": "Bacteriology",
+    "topic": "General",
+    "difficulty": "easy",
+    "question": "Người được xem là cha đẻ của thuyết vi trùng gây bệnh là ai?",
+    "options": [
+      "Robert Koch",
+      "Alexander Fleming",
+      "Watson",
+      "Crick"
+    ],
+    "answer": 0,
+    "explanation": "Robert Koch đề ra các tiêu chuẩn Koch nổi tiếng."
+  },
+  {
+    "id": 5,
+    "category": "Bacteriology",
+    "topic": "General",
+    "difficulty": "easy",
+    "question": "Ngoại độc tố của vi khuẩn thường có bản chất là gì?",
+    "options": [
+      "Protein",
+      "Lipid",
+      "DNA",
+      "Polysaccharide"
+    ],
+    "answer": 0,
+    "explanation": "Ngoại độc tố thường là protein do vi khuẩn tiết ra."
+  },
+  {
+    "id": 6,
+    "category": "Bacteriology",
+    "topic": "Staphylococcus",
+    "difficulty": "easy",
+    "question": "Xét nghiệm nào giúp phân biệt Staphylococcus với Streptococcus?",
+    "options": [
+      "Catalase",
+      "Coagulase",
+      "CAMP",
+      "Optochin"
+    ],
+    "answer": 0,
+    "explanation": "Staphylococcus catalase (+), Streptococcus catalase (-)."
+  },
+  {
+    "id": 7,
+    "category": "Bacteriology",
+    "topic": "Staphylococcus",
+    "difficulty": "easy",
+    "question": "Loài tụ cầu thường coagulase dương tính là?",
+    "options": [
+      "S. epidermidis",
+      "S. saprophyticus",
+      "S. aureus",
+      "Enterococcus faecalis"
+    ],
+    "answer": 2,
+    "explanation": "S. aureus là tụ cầu điển hình coagulase (+)."
+  },
+  {
+    "id": 8,
+    "category": "Bacteriology",
+    "topic": "Staphylococcus",
+    "difficulty": "medium",
+    "question": "Protein A là yếu tố độc lực của vi khuẩn nào?",
+    "options": [
+      "S. aureus",
+      "S. pneumoniae",
+      "N. gonorrhoeae",
+      "E. coli"
+    ],
+    "answer": 0,
+    "explanation": "Protein A giúp S. aureus chống thực bào."
+  },
+  {
+    "id": 9,
+    "category": "Bacteriology",
+    "topic": "Staphylococcus",
+    "difficulty": "medium",
+    "question": "Môi trường MSA được sử dụng chủ yếu để nhận diện nhóm nào?",
+    "options": [
+      "Salmonella",
+      "Staphylococcus",
+      "Mycobacterium",
+      "Neisseria"
+    ],
+    "answer": 1,
+    "explanation": "MSA là Mannitol Salt Agar dùng cho tụ cầu."
+  },
+  {
+    "id": 10,
+    "category": "Bacteriology",
+    "topic": "Staphylococcus",
+    "difficulty": "medium",
+    "question": "MRSA viết tắt của?",
+    "options": [
+      "Methicillin Resistant Staphylococcus aureus",
+      "Multi Resistant Salmonella Agent",
+      "Modified Resistant Streptococcus aureus",
+      "Methicillin Related Staphylococcus antigen"
+    ],
+    "answer": 0,
+    "explanation": "MRSA là S. aureus kháng Methicillin."
+  },
+  {
+    "id": 11,
+    "category": "Bacteriology",
+    "topic": "Streptococcus",
+    "difficulty": "medium",
+    "question": "S. pyogenes thuộc nhóm Lancefield nào?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 0,
+    "explanation": "S. pyogenes là liên cầu nhóm A."
+  },
+  {
+    "id": 12,
+    "category": "Bacteriology",
+    "topic": "Streptococcus",
+    "difficulty": "medium",
+    "question": "S. agalactiae thuộc nhóm Lancefield nào?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 1,
+    "explanation": "S. agalactiae là liên cầu nhóm B."
+  },
+  {
+    "id": 13,
+    "category": "Bacteriology",
+    "topic": "Streptococcus",
+    "difficulty": "medium",
+    "question": "Xét nghiệm CAMP dương tính gợi ý vi khuẩn nào?",
+    "options": [
+      "S. pyogenes",
+      "S. agalactiae",
+      "S. pneumoniae",
+      "Enterococcus"
+    ],
+    "answer": 1,
+    "explanation": "CAMP test dùng nhận diện S. agalactiae."
+  },
+  {
+    "id": 14,
+    "category": "Bacteriology",
+    "topic": "Streptococcus",
+    "difficulty": "medium",
+    "question": "Liên cầu nhóm A thường nhạy với?",
+    "options": [
+      "Optochin",
+      "Bacitracin",
+      "Novobiocin",
+      "Vancomycin"
+    ],
+    "answer": 1,
+    "explanation": "S. pyogenes thường nhạy với Bacitracin."
+  },
+  {
+    "id": 15,
+    "category": "Bacteriology",
+    "topic": "Enterococcus",
+    "difficulty": "hard",
+    "question": "Enterococcus faecalis thường cho kết quả nào?",
+    "options": [
+      "NaCl 6,5% mọc được",
+      "Catalase dương mạnh",
+      "Coagulase dương",
+      "Optochin nhạy"
+    ],
+    "answer": 0,
+    "explanation": "Enterococcus có thể phát triển trong môi trường NaCl 6,5%."
+  },
+  {
+    "id": 16,
+    "category": "Bacteriology",
+    "topic": "Pneumococcus",
+    "difficulty": "easy",
+    "question": "Tác nhân thường gặp gây viêm phổi cộng đồng là?",
+    "options": [
+      "S. aureus",
+      "S. pneumoniae",
+      "N. gonorrhoeae",
+      "E. coli"
+    ],
+    "answer": 1,
+    "explanation": "S. pneumoniae là nguyên nhân hàng đầu."
+  },
+  {
+    "id": 17,
+    "category": "Bacteriology",
+    "topic": "Pneumococcus",
+    "difficulty": "medium",
+    "question": "S. pneumoniae thường có hiện tượng tan máu nào?",
+    "options": [
+      "Beta",
+      "Alpha",
+      "Gamma",
+      "Không tan máu"
+    ],
+    "answer": 1,
+    "explanation": "Phế cầu thường gây alpha hemolysis."
+  },
+  {
+    "id": 18,
+    "category": "Bacteriology",
+    "topic": "Pneumococcus",
+    "difficulty": "medium",
+    "question": "Xét nghiệm kinh điển để phân biệt phế cầu với viridans streptococci là?",
+    "options": [
+      "Catalase",
+      "Coagulase",
+      "Optochin",
+      "Urease"
+    ],
+    "answer": 2,
+    "explanation": "S. pneumoniae nhạy với Optochin."
+  },
+  {
+    "id": 19,
+    "category": "Bacteriology",
+    "topic": "Pneumococcus",
+    "difficulty": "hard",
+    "question": "Quellung reaction giúp phát hiện cấu trúc nào?",
+    "options": [
+      "Roi",
+      "Vỏ",
+      "Nha bào",
+      "Độc tố"
+    ],
+    "answer": 1,
+    "explanation": "Phản ứng Quellung dùng nhận diện vỏ polysaccharide."
+  },
+  {
+    "id": 20,
+    "category": "Bacteriology",
+    "topic": "Pneumococcus",
+    "difficulty": "medium",
+    "question": "Yếu tố độc lực quan trọng nhất của S. pneumoniae là?",
+    "options": [
+      "Capsule",
+      "Catalase",
+      "Flagella",
+      "Nha bào"
+    ],
+    "answer": 0,
+    "explanation": "Vỏ polysaccharide giúp tránh thực bào."
+  },
+  {
+    "id": 21,
+    "category": "Bacteriology",
+    "topic": "Neisseria",
+    "difficulty": "easy",
+    "question": "Lậu cầu có hình thái đặc trưng nào?",
+    "options": [
+      "Trực khuẩn Gram dương",
+      "Song cầu Gram âm",
+      "Xoắn khuẩn",
+      "Cầu khuẩn Gram dương"
+    ],
+    "answer": 1,
+    "explanation": "N. gonorrhoeae là song cầu Gram âm hình hạt cà phê."
+  },
+  {
+    "id": 22,
+    "category": "Bacteriology",
+    "topic": "Neisseria",
+    "difficulty": "easy",
+    "question": "Não mô cầu là vi khuẩn nào?",
+    "options": [
+      "N. gonorrhoeae",
+      "N. meningitidis",
+      "S. pneumoniae",
+      "H. influenzae"
+    ],
+    "answer": 1,
+    "explanation": "N. meningitidis gây viêm màng não mủ."
+  },
+  {
+    "id": 23,
+    "category": "Bacteriology",
+    "topic": "Neisseria",
+    "difficulty": "medium",
+    "question": "Neisseria thường cho phản ứng oxidase như thế nào?",
+    "options": [
+      "Âm tính",
+      "Dương tính",
+      "Không xác định",
+      "Biến đổi"
+    ],
+    "answer": 1,
+    "explanation": "Neisseria oxidase (+)."
+  },
+  {
+    "id": 24,
+    "category": "Bacteriology",
+    "topic": "Neisseria",
+    "difficulty": "medium",
+    "question": "Môi trường Thayer-Martin được dùng để nuôi cấy?",
+    "options": [
+      "Mycobacterium",
+      "Neisseria",
+      "Salmonella",
+      "Proteus"
+    ],
+    "answer": 1,
+    "explanation": "Thayer-Martin là môi trường chọn lọc cho Neisseria."
+  },
+  {
+    "id": 25,
+    "category": "Bacteriology",
+    "topic": "Neisseria",
+    "difficulty": "medium",
+    "question": "Não mô cầu có yếu tố độc lực quan trọng nào?",
+    "options": [
+      "Vỏ polysaccharide",
+      "Protein A",
+      "Nha bào",
+      "Cord factor"
+    ],
+    "answer": 0,
+    "explanation": "Capsule giúp N. meningitidis chống thực bào."
+  },
+  {
+    "id": 26,
+    "category": "Bacteriology",
+    "topic": "Enterobacteriaceae",
+    "difficulty": "easy",
+    "question": "Đặc điểm chung của đa số vi khuẩn thuộc họ Enterobacteriaceae là?",
+    "options": [
+      "Oxidase (+)",
+      "Oxidase (-)",
+      "Acid-fast (+)",
+      "Tạo nha bào"
+    ],
+    "answer": 1,
+    "explanation": "Đa số Enterobacteriaceae có oxidase âm tính."
+  },
+  {
+    "id": 27,
+    "category": "Bacteriology",
+    "topic": "Media",
+    "difficulty": "easy",
+    "question": "MacConkey agar được sử dụng chủ yếu để phân lập nhóm nào?",
+    "options": [
+      "Virus",
+      "Gram dương",
+      "Gram âm đường ruột",
+      "Nấm"
+    ],
+    "answer": 2,
+    "explanation": "MacConkey là môi trường chọn lọc cho trực khuẩn Gram âm đường ruột."
+  },
+  {
+    "id": 28,
+    "category": "Bacteriology",
+    "topic": "Media",
+    "difficulty": "medium",
+    "question": "EMB agar giúp phân biệt vi khuẩn dựa vào khả năng nào?",
+    "options": [
+      "Sinh H2S",
+      "Lên men lactose",
+      "Tạo urease",
+      "Tạo nha bào"
+    ],
+    "answer": 1,
+    "explanation": "EMB là môi trường phân biệt dựa vào khả năng lên men lactose."
+  },
+  {
+    "id": 29,
+    "category": "Bacteriology",
+    "topic": "E.coli",
+    "difficulty": "easy",
+    "question": "E.coli thường cho khuẩn lạc màu gì trên MacConkey agar?",
+    "options": [
+      "Không màu",
+      "Đen",
+      "Hồng",
+      "Vàng"
+    ],
+    "answer": 2,
+    "explanation": "E.coli lên men lactose tạo khuẩn lạc màu hồng."
+  },
+  {
+    "id": 30,
+    "category": "Bacteriology",
+    "topic": "E.coli",
+    "difficulty": "medium",
+    "question": "IMViC cổ điển của E.coli là?",
+    "options": [
+      "--++",
+      "++--",
+      "+-+-",
+      "-+-+"
+    ],
+    "answer": 1,
+    "explanation": "E.coli thường có kiểu IMViC ++--."
+  },
+  {
+    "id": 31,
+    "category": "Bacteriology",
+    "topic": "E.coli",
+    "difficulty": "medium",
+    "question": "ETEC là nguyên nhân thường gặp của?",
+    "options": [
+      "Thương hàn",
+      "Tiêu chảy du lịch",
+      "Viêm màng não",
+      "Uốn ván"
+    ],
+    "answer": 1,
+    "explanation": "ETEC là nguyên nhân phổ biến của tiêu chảy du lịch."
+  },
+  {
+    "id": 32,
+    "category": "Bacteriology",
+    "topic": "E.coli",
+    "difficulty": "hard",
+    "question": "Chủng E.coli O157:H7 thường thuộc nhóm nào?",
+    "options": [
+      "ETEC",
+      "EIEC",
+      "EHEC",
+      "EAEC"
+    ],
+    "answer": 2,
+    "explanation": "EHEC O157:H7 liên quan hội chứng tán huyết ure huyết cao."
+  },
+  {
+    "id": 33,
+    "category": "Bacteriology",
+    "topic": "E.coli",
+    "difficulty": "hard",
+    "question": "Biến chứng đáng ngại của EHEC là?",
+    "options": [
+      "Áp xe gan",
+      "Viêm não",
+      "HUS",
+      "Lao kê"
+    ],
+    "answer": 2,
+    "explanation": "EHEC có thể gây hội chứng tán huyết ure huyết cao (HUS)."
+  },
+  {
+    "id": 34,
+    "category": "Bacteriology",
+    "topic": "E.coli",
+    "difficulty": "medium",
+    "question": "EIEC gây bệnh theo cơ chế giống vi khuẩn nào?",
+    "options": [
+      "Salmonella",
+      "Shigella",
+      "Vibrio",
+      "Klebsiella"
+    ],
+    "answer": 1,
+    "explanation": "EIEC có cơ chế xâm nhập tương tự Shigella."
+  },
+  {
+    "id": 35,
+    "category": "Bacteriology",
+    "topic": "Salmonella",
+    "difficulty": "easy",
+    "question": "Tác nhân gây bệnh thương hàn là?",
+    "options": [
+      "Salmonella Typhi",
+      "Shigella sonnei",
+      "Vibrio cholerae",
+      "Proteus mirabilis"
+    ],
+    "answer": 0,
+    "explanation": "Salmonella Typhi là tác nhân kinh điển của thương hàn."
+  },
+  {
+    "id": 36,
+    "category": "Bacteriology",
+    "topic": "Salmonella",
+    "difficulty": "medium",
+    "question": "Kháng nguyên đặc trưng liên quan độc lực của S. Typhi là?",
+    "options": [
+      "K antigen",
+      "Vi antigen",
+      "M protein",
+      "Protein A"
+    ],
+    "answer": 1,
+    "explanation": "Vi antigen liên quan độc lực và khả năng tránh miễn dịch."
+  },
+  {
+    "id": 37,
+    "category": "Bacteriology",
+    "topic": "Salmonella",
+    "difficulty": "medium",
+    "question": "Salmonella thường có khả năng nào sau đây?",
+    "options": [
+      "Sinh H2S",
+      "Oxidase (+)",
+      "Coagulase (+)",
+      "Catalase (-)"
+    ],
+    "answer": 0,
+    "explanation": "Salmonella thường H2S dương tính."
+  },
+  {
+    "id": 38,
+    "category": "Bacteriology",
+    "topic": "Shigella",
+    "difficulty": "easy",
+    "question": "Shigella thường gây bệnh gì?",
+    "options": [
+      "Tả",
+      "Lỵ trực khuẩn",
+      "Thương hàn",
+      "Lao"
+    ],
+    "answer": 1,
+    "explanation": "Shigella là tác nhân chính gây lỵ trực khuẩn."
+  },
+  {
+    "id": 39,
+    "category": "Bacteriology",
+    "topic": "Shigella",
+    "difficulty": "medium",
+    "question": "Đặc điểm di động của Shigella là?",
+    "options": [
+      "Di động mạnh",
+      "Không di động",
+      "Chỉ di động ở 25°C",
+      "Chỉ di động trong máu"
+    ],
+    "answer": 1,
+    "explanation": "Khác Salmonella, Shigella không di động."
+  },
+  {
+    "id": 40,
+    "category": "Bacteriology",
+    "topic": "Shigella",
+    "difficulty": "medium",
+    "question": "Shigella thường cho kết quả H2S như thế nào?",
+    "options": [
+      "Dương tính",
+      "Âm tính",
+      "Biến đổi",
+      "Không xác định"
+    ],
+    "answer": 1,
+    "explanation": "Shigella thường H2S âm tính."
+  },
+  {
+    "id": 41,
+    "category": "Bacteriology",
+    "topic": "Comparison",
+    "difficulty": "hard",
+    "question": "Tiêu chí nào giúp phân biệt Salmonella với Shigella trong phòng xét nghiệm?",
+    "options": [
+      "Gram stain",
+      "Tạo nha bào",
+      "Khả năng sinh H2S",
+      "Có DNA"
+    ],
+    "answer": 2,
+    "explanation": "Salmonella H2S (+), Shigella H2S (-)."
+  },
+  {
+    "id": 42,
+    "category": "Bacteriology",
+    "topic": "Proteus",
+    "difficulty": "easy",
+    "question": "Proteus nổi tiếng với hiện tượng nào?",
+    "options": [
+      "Capsule",
+      "Swarming",
+      "Hemolysis alpha",
+      "Acid-fast"
+    ],
+    "answer": 1,
+    "explanation": "Proteus lan rộng trên thạch tạo hiện tượng swarming."
+  },
+  {
+    "id": 43,
+    "category": "Bacteriology",
+    "topic": "Proteus",
+    "difficulty": "medium",
+    "question": "Proteus thường cho kết quả urease như thế nào?",
+    "options": [
+      "Âm tính",
+      "Dương tính mạnh",
+      "Biến đổi",
+      "Không xác định"
+    ],
+    "answer": 1,
+    "explanation": "Proteus là vi khuẩn urease dương tính mạnh."
+  },
+  {
+    "id": 44,
+    "category": "Bacteriology",
+    "topic": "Klebsiella",
+    "difficulty": "easy",
+    "question": "Yếu tố nổi bật nhất của Klebsiella là?",
+    "options": [
+      "Nha bào",
+      "Capsule dày",
+      "Acid-fast",
+      "Coagulase"
+    ],
+    "answer": 1,
+    "explanation": "Klebsiella có vỏ polysaccharide dày."
+  },
+  {
+    "id": 45,
+    "category": "Bacteriology",
+    "topic": "Klebsiella",
+    "difficulty": "medium",
+    "question": "Klebsiella pneumoniae thường có tính chất nào?",
+    "options": [
+      "Di động mạnh",
+      "Không di động",
+      "Oxidase (+)",
+      "Tạo nha bào"
+    ],
+    "answer": 1,
+    "explanation": "Klebsiella thường không di động."
+  },
+  {
+    "id": 46,
+    "category": "Bacteriology",
+    "topic": "Vibrio",
+    "difficulty": "easy",
+    "question": "Tác nhân gây bệnh tả là?",
+    "options": [
+      "Vibrio cholerae",
+      "Shigella dysenteriae",
+      "Salmonella Typhi",
+      "EHEC"
+    ],
+    "answer": 0,
+    "explanation": "Vibrio cholerae là vi khuẩn gây bệnh tả."
+  },
+  {
+    "id": 47,
+    "category": "Bacteriology",
+    "topic": "Vibrio",
+    "difficulty": "medium",
+    "question": "Hình thể đặc trưng của Vibrio cholerae là?",
+    "options": [
+      "Song cầu",
+      "Trực khuẩn ngắn",
+      "Dấu phẩy",
+      "Xoắn khuẩn"
+    ],
+    "answer": 2,
+    "explanation": "V. cholerae là trực khuẩn cong hình dấu phẩy."
+  },
+  {
+    "id": 48,
+    "category": "Bacteriology",
+    "topic": "Vibrio",
+    "difficulty": "medium",
+    "question": "Tiêu chảy trong bệnh tả thường có tính chất nào?",
+    "options": [
+      "Máu đỏ tươi",
+      "Nước vo gạo",
+      "Mủ đặc",
+      "Đen như hắc ín"
+    ],
+    "answer": 1,
+    "explanation": "Tiêu chảy nước vo gạo là biểu hiện kinh điển của tả."
+  },
+  {
+    "id": 49,
+    "category": "Bacteriology",
+    "topic": "Vibrio",
+    "difficulty": "hard",
+    "question": "Độc tố tả làm tăng chất truyền tin nội bào nào?",
+    "options": [
+      "cAMP",
+      "cGMP",
+      "ATP",
+      "ADP"
+    ],
+    "answer": 0,
+    "explanation": "Độc tố tả hoạt hóa adenylate cyclase làm tăng cAMP."
+  },
+  {
+    "id": 50,
+    "category": "Bacteriology",
+    "topic": "Vibrio",
+    "difficulty": "medium",
+    "question": "Vibrio cholerae thường cho kết quả oxidase?",
+    "options": [
+      "Âm tính",
+      "Dương tính",
+      "Không xác định",
+      "Thay đổi theo tuổi khuẩn lạc"
+    ],
+    "answer": 1,
+    "explanation": "Vibrio cholerae thuộc nhóm oxidase dương tính."
+  },
+  {
+    "id": 51,
+    "category": "Bacteriology",
+    "topic": "Tuberculosis",
+    "difficulty": "easy",
+    "question": "Tác nhân gây bệnh lao ở người thường gặp nhất là gì?",
+    "options": [
+      "Mycobacterium leprae",
+      "Mycobacterium tuberculosis",
+      "Nocardia asteroides",
+      "Corynebacterium diphtheriae"
+    ],
+    "answer": 1,
+    "explanation": "Mycobacterium tuberculosis là tác nhân chính gây lao ở người."
+  },
+  {
+    "id": 52,
+    "category": "Bacteriology",
+    "topic": "Tuberculosis",
+    "difficulty": "easy",
+    "question": "Vi khuẩn lao được xếp vào nhóm nào?",
+    "options": [
+      "Acid-fast bacilli",
+      "Gram dương sinh nha bào",
+      "Song cầu Gram âm",
+      "Xoắn khuẩn"
+    ],
+    "answer": 0,
+    "explanation": "M. tuberculosis là trực khuẩn kháng cồn kháng acid (AFB)."
+  },
+  {
+    "id": 53,
+    "category": "Bacteriology",
+    "topic": "Tuberculosis",
+    "difficulty": "medium",
+    "question": "Kỹ thuật nhuộm kinh điển dùng phát hiện AFB là?",
+    "options": [
+      "Gram",
+      "Ziehl-Neelsen",
+      "Giemsa",
+      "India ink"
+    ],
+    "answer": 1,
+    "explanation": "Ziehl-Neelsen là phương pháp kinh điển để phát hiện trực khuẩn kháng cồn kháng acid."
+  },
+  {
+    "id": 54,
+    "category": "Bacteriology",
+    "topic": "Tuberculosis",
+    "difficulty": "medium",
+    "question": "Thành phần nào giúp vi khuẩn lao kháng acid?",
+    "options": [
+      "Teichoic acid",
+      "Mycolic acid",
+      "Protein A",
+      "Capsule"
+    ],
+    "answer": 1,
+    "explanation": "Vách tế bào giàu mycolic acid tạo tính chất kháng acid."
+  },
+  {
+    "id": 55,
+    "category": "Bacteriology",
+    "topic": "Tuberculosis",
+    "difficulty": "medium",
+    "question": "Môi trường nuôi cấy kinh điển của vi khuẩn lao là?",
+    "options": [
+      "Chocolate agar",
+      "Lowenstein-Jensen",
+      "MacConkey",
+      "EMB"
+    ],
+    "answer": 1,
+    "explanation": "Lowenstein-Jensen là môi trường chuyên biệt cho Mycobacterium."
+  },
+  {
+    "id": 56,
+    "category": "Bacteriology",
+    "topic": "Tuberculosis",
+    "difficulty": "hard",
+    "question": "Cord factor của vi khuẩn lao liên quan đến?",
+    "options": [
+      "Độc lực",
+      "Khả năng tạo nha bào",
+      "Khả năng di động",
+      "Khả năng lên men lactose"
+    ],
+    "answer": 0,
+    "explanation": "Cord factor là yếu tố độc lực quan trọng của M. tuberculosis."
+  },
+  {
+    "id": 57,
+    "category": "Bacteriology",
+    "topic": "Tuberculosis",
+    "difficulty": "hard",
+    "question": "Tổn thương mô học đặc trưng của lao là?",
+    "options": [
+      "Áp xe sinh mủ",
+      "U hạt bã đậu",
+      "Hoại tử hóa lỏng",
+      "Xuất huyết lan tỏa"
+    ],
+    "answer": 1,
+    "explanation": "Tổn thương kinh điển là u hạt lao có hoại tử bã đậu."
+  },
+  {
+    "id": 58,
+    "category": "Bacteriology",
+    "topic": "Tuberculosis",
+    "difficulty": "hard",
+    "question": "Tế bào khổng lồ thường gặp trong u hạt lao là?",
+    "options": [
+      "Reed-Sternberg",
+      "Langhans",
+      "Langerhans",
+      "Kupffer"
+    ],
+    "answer": 1,
+    "explanation": "U hạt lao thường có tế bào khổng lồ Langhans."
+  },
+  {
+    "id": 59,
+    "category": "Bacteriology",
+    "topic": "Tuberculosis",
+    "difficulty": "medium",
+    "question": "Mantoux test sử dụng chất nào?",
+    "options": [
+      "Tetanospasmin",
+      "PPD",
+      "HBsAg",
+      "BCG"
+    ],
+    "answer": 1,
+    "explanation": "Mantoux sử dụng purified protein derivative (PPD)."
+  },
+  {
+    "id": 60,
+    "category": "Bacteriology",
+    "topic": "Tuberculosis",
+    "difficulty": "medium",
+    "question": "Vaccine phòng lao hiện nay là?",
+    "options": [
+      "MR",
+      "DPT",
+      "BCG",
+      "HBV"
+    ],
+    "answer": 2,
+    "explanation": "BCG được dùng rộng rãi để phòng lao."
+  },
+  {
+    "id": 61,
+    "category": "Bacteriology",
+    "topic": "Leprosy",
+    "difficulty": "easy",
+    "question": "Tác nhân gây bệnh phong là?",
+    "options": [
+      "M. tuberculosis",
+      "M. leprae",
+      "Treponema pallidum",
+      "Nocardia"
+    ],
+    "answer": 1,
+    "explanation": "M. leprae là căn nguyên của bệnh phong."
+  },
+  {
+    "id": 62,
+    "category": "Bacteriology",
+    "topic": "Leprosy",
+    "difficulty": "medium",
+    "question": "Vi khuẩn phong có ái lực đặc biệt với?",
+    "options": [
+      "Mô lạnh ngoại biên",
+      "Gan",
+      "Thận",
+      "Tim"
+    ],
+    "answer": 0,
+    "explanation": "M. leprae phát triển tốt ở vùng nhiệt độ thấp hơn trung tâm cơ thể."
+  },
+  {
+    "id": 63,
+    "category": "Bacteriology",
+    "topic": "Leprosy",
+    "difficulty": "medium",
+    "question": "Tên gọi khác của M. leprae là?",
+    "options": [
+      "Hansen bacillus",
+      "Koch bacillus",
+      "Pfeiffer bacillus",
+      "Loeffler bacillus"
+    ],
+    "answer": 0,
+    "explanation": "Vi khuẩn phong còn gọi là Hansen bacillus."
+  },
+  {
+    "id": 64,
+    "category": "Bacteriology",
+    "topic": "Leprosy",
+    "difficulty": "hard",
+    "question": "M. leprae nổi tiếng vì đặc điểm nào?",
+    "options": [
+      "Nuôi cấy rất dễ",
+      "Không nuôi cấy nhân tạo thành công",
+      "Tạo nha bào",
+      "Lên men lactose"
+    ],
+    "answer": 1,
+    "explanation": "M. leprae rất khó nghiên cứu vì chưa nuôi cấy nhân tạo thành công."
+  },
+  {
+    "id": 65,
+    "category": "Bacteriology",
+    "topic": "Leprosy",
+    "difficulty": "hard",
+    "question": "Dạng phong liên quan miễn dịch tế bào tốt hơn là?",
+    "options": [
+      "Phong củ",
+      "Phong u",
+      "Phong trung gian nặng",
+      "Phong lan tỏa"
+    ],
+    "answer": 0,
+    "explanation": "Phong củ có đáp ứng miễn dịch tế bào mạnh hơn."
+  },
+  {
+    "id": 66,
+    "category": "Bacteriology",
+    "topic": "Tetanus",
+    "difficulty": "easy",
+    "question": "Tác nhân gây uốn ván là?",
+    "options": [
+      "C. tetani",
+      "C. botulinum",
+      "B. anthracis",
+      "C. difficile"
+    ],
+    "answer": 0,
+    "explanation": "Clostridium tetani là tác nhân gây uốn ván."
+  },
+  {
+    "id": 67,
+    "category": "Bacteriology",
+    "topic": "Tetanus",
+    "difficulty": "medium",
+    "question": "Clostridium tetani thuộc nhóm nào?",
+    "options": [
+      "Hiếu khí bắt buộc",
+      "Kỵ khí bắt buộc",
+      "Vi hiếu khí",
+      "Không cần oxy"
+    ],
+    "answer": 1,
+    "explanation": "C. tetani là trực khuẩn Gram dương kỵ khí bắt buộc."
+  },
+  {
+    "id": 68,
+    "category": "Bacteriology",
+    "topic": "Tetanus",
+    "difficulty": "medium",
+    "question": "Nha bào của C. tetani tạo hình ảnh đặc trưng nào?",
+    "options": [
+      "Hình dùi trống",
+      "Chuỗi hạt",
+      "Song cầu",
+      "Hình hạt cà phê"
+    ],
+    "answer": 0,
+    "explanation": "Nha bào tận cùng tạo hình ảnh dùi trống hoặc đinh ghim."
+  },
+  {
+    "id": 69,
+    "category": "Bacteriology",
+    "topic": "Tetanus",
+    "difficulty": "medium",
+    "question": "Độc tố chính gây triệu chứng uốn ván là?",
+    "options": [
+      "Botulinum toxin",
+      "Tetanospasmin",
+      "Endotoxin",
+      "Enterotoxin"
+    ],
+    "answer": 1,
+    "explanation": "Tetanospasmin là ngoại độc tố thần kinh cực mạnh."
+  },
+  {
+    "id": 70,
+    "category": "Bacteriology",
+    "topic": "Tetanus",
+    "difficulty": "hard",
+    "question": "Biểu hiện kinh điển của uốn ván toàn thể là?",
+    "options": [
+      "Liệt mềm",
+      "Cứng hàm",
+      "Tiêu chảy",
+      "Vàng da"
+    ],
+    "answer": 1,
+    "explanation": "Cứng hàm là triệu chứng sớm và đặc trưng."
+  },
+  {
+    "id": 71,
+    "category": "Bacteriology",
+    "topic": "Syphilis",
+    "difficulty": "easy",
+    "question": "Tác nhân gây giang mai là?",
+    "options": [
+      "Borrelia recurrentis",
+      "Treponema pallidum",
+      "Leptospira interrogans",
+      "Neisseria gonorrhoeae"
+    ],
+    "answer": 1,
+    "explanation": "Treponema pallidum là xoắn khuẩn gây giang mai."
+  },
+  {
+    "id": 72,
+    "category": "Bacteriology",
+    "topic": "Syphilis",
+    "difficulty": "medium",
+    "question": "Phương pháp kinh điển để quan sát T. pallidum sống là?",
+    "options": [
+      "Gram",
+      "Dark-field microscopy",
+      "Ziehl-Neelsen",
+      "India ink"
+    ],
+    "answer": 1,
+    "explanation": "Xoắn khuẩn rất mảnh nên thường được quan sát bằng kính nền đen."
+  },
+  {
+    "id": 73,
+    "category": "Bacteriology",
+    "topic": "Syphilis",
+    "difficulty": "medium",
+    "question": "Tổn thương đặc trưng của giang mai thời kỳ I là?",
+    "options": [
+      "Săng cứng",
+      "Gumma",
+      "Ban xuất huyết",
+      "Mụn nước"
+    ],
+    "answer": 0,
+    "explanation": "Săng cứng là tổn thương nguyên phát của giang mai."
+  },
+  {
+    "id": 74,
+    "category": "Bacteriology",
+    "topic": "Syphilis",
+    "difficulty": "hard",
+    "question": "Condylomata lata thường gặp ở giai đoạn nào của giang mai?",
+    "options": [
+      "Tiềm tàng",
+      "Giai đoạn I",
+      "Giai đoạn II",
+      "Giai đoạn III"
+    ],
+    "answer": 2,
+    "explanation": "Condylomata lata là biểu hiện điển hình của giang mai II."
+  },
+  {
+    "id": 75,
+    "category": "Bacteriology",
+    "topic": "Syphilis",
+    "difficulty": "hard",
+    "question": "Tổn thương gumma thường xuất hiện ở giai đoạn nào?",
+    "options": [
+      "Giai đoạn I",
+      "Giai đoạn II",
+      "Giai đoạn III",
+      "Bẩm sinh sớm"
+    ],
+    "answer": 2,
+    "explanation": "Gumma là tổn thương kinh điển của giang mai thời kỳ III."
+  },
+  {
+    "id": 76,
+    "category": "Bacteriology",
+    "topic": "Media",
+    "difficulty": "medium",
+    "question": "Môi trường nào thích hợp nhất để nuôi cấy Neisseria gonorrhoeae?",
+    "options": [
+      "MacConkey agar",
+      "Thayer-Martin agar",
+      "Lowenstein-Jensen",
+      "EMB agar"
+    ],
+    "answer": 1,
+    "explanation": "Thayer-Martin là môi trường chọn lọc cho Neisseria."
+  },
+  {
+    "id": 77,
+    "category": "Bacteriology",
+    "topic": "Media",
+    "difficulty": "medium",
+    "question": "Chocolate agar khác Blood agar chủ yếu ở điểm nào?",
+    "options": [
+      "Có kháng sinh",
+      "Hồng cầu bị phá vỡ giải phóng yếu tố tăng trưởng",
+      "Có muối mật",
+      "Có lactose"
+    ],
+    "answer": 1,
+    "explanation": "Chocolate agar chứa hồng cầu đã bị ly giải, giải phóng yếu tố X và V."
+  },
+  {
+    "id": 78,
+    "category": "Bacteriology",
+    "topic": "Media",
+    "difficulty": "medium",
+    "question": "MacConkey agar vừa là môi trường chọn lọc vừa là môi trường phân biệt vì sao?",
+    "options": [
+      "Chọn lọc Gram âm, phân biệt lên men lactose",
+      "Chọn lọc virus, phân biệt RNA-DNA",
+      "Chọn lọc Gram dương, phân biệt catalase",
+      "Chọn lọc nấm, phân biệt mycelium"
+    ],
+    "answer": 0,
+    "explanation": "MacConkey ức chế Gram dương và đánh giá khả năng lên men lactose."
+  },
+  {
+    "id": 79,
+    "category": "Bacteriology",
+    "topic": "Media",
+    "difficulty": "hard",
+    "question": "Vi khuẩn nào thường cho ánh kim xanh trên EMB agar?",
+    "options": [
+      "Salmonella Typhi",
+      "Proteus mirabilis",
+      "E. coli",
+      "Shigella sonnei"
+    ],
+    "answer": 2,
+    "explanation": "E.coli lên men lactose mạnh tạo ánh kim xanh đặc trưng."
+  },
+  {
+    "id": 80,
+    "category": "Bacteriology",
+    "topic": "Diagnostics",
+    "difficulty": "medium",
+    "question": "Catalase (+) và coagulase (+) gợi ý vi khuẩn nào nhất?",
+    "options": [
+      "S. aureus",
+      "S. epidermidis",
+      "S. pyogenes",
+      "Enterococcus faecalis"
+    ],
+    "answer": 0,
+    "explanation": "S. aureus là tụ cầu catalase (+) và coagulase (+)."
+  },
+  {
+    "id": 81,
+    "category": "Bacteriology",
+    "topic": "Diagnostics",
+    "difficulty": "medium",
+    "question": "Catalase (-), beta hemolysis, nhạy Bacitracin gợi ý?",
+    "options": [
+      "S. aureus",
+      "S. pneumoniae",
+      "S. pyogenes",
+      "Enterococcus"
+    ],
+    "answer": 2,
+    "explanation": "Liên cầu nhóm A nhạy Bacitracin."
+  },
+  {
+    "id": 82,
+    "category": "Bacteriology",
+    "topic": "Diagnostics",
+    "difficulty": "medium",
+    "question": "Alpha hemolysis và nhạy Optochin gợi ý?",
+    "options": [
+      "Viridans streptococci",
+      "S. pneumoniae",
+      "Enterococcus",
+      "S. aureus"
+    ],
+    "answer": 1,
+    "explanation": "Đây là dấu hiệu kinh điển của phế cầu."
+  },
+  {
+    "id": 83,
+    "category": "Bacteriology",
+    "topic": "Diagnostics",
+    "difficulty": "hard",
+    "question": "Catalase (-), CAMP (+), nhóm B Lancefield là?",
+    "options": [
+      "S. agalactiae",
+      "S. pyogenes",
+      "S. pneumoniae",
+      "S. aureus"
+    ],
+    "answer": 0,
+    "explanation": "S. agalactiae là liên cầu nhóm B kinh điển."
+  },
+  {
+    "id": 84,
+    "category": "Bacteriology",
+    "topic": "Case",
+    "difficulty": "hard",
+    "question": "Bệnh nhân tiêu chảy máu, xét nghiệm phát hiện độc tố giống Shiga. Tác nhân phù hợp nhất là?",
+    "options": [
+      "ETEC",
+      "EIEC",
+      "EHEC",
+      "EAEC"
+    ],
+    "answer": 2,
+    "explanation": "EHEC sinh Shiga-like toxin."
+  },
+  {
+    "id": 85,
+    "category": "Bacteriology",
+    "topic": "Case",
+    "difficulty": "hard",
+    "question": "Bệnh nhân sốt kéo dài, cấy máu mọc trực khuẩn Gram âm, H2S (+), có kháng nguyên Vi. Chẩn đoán phù hợp nhất?",
+    "options": [
+      "Shigellosis",
+      "Thương hàn",
+      "Tả",
+      "Nhiễm ETEC"
+    ],
+    "answer": 1,
+    "explanation": "Kháng nguyên Vi đặc trưng cho Salmonella Typhi."
+  },
+  {
+    "id": 86,
+    "category": "Bacteriology",
+    "topic": "Comparison",
+    "difficulty": "hard",
+    "question": "Đặc điểm nào đúng với Shigella nhưng không đúng với Salmonella?",
+    "options": [
+      "Gram âm",
+      "Không di động",
+      "Gây bệnh đường ruột",
+      "Không lên men lactose"
+    ],
+    "answer": 1,
+    "explanation": "Shigella không di động, Salmonella thường di động."
+  },
+  {
+    "id": 87,
+    "category": "Bacteriology",
+    "topic": "Comparison",
+    "difficulty": "hard",
+    "question": "Điểm nổi bật nhất giúp nhận diện Proteus trong phòng xét nghiệm là?",
+    "options": [
+      "Ánh kim xanh",
+      "Swarming",
+      "Capsule dày",
+      "Acid-fast"
+    ],
+    "answer": 1,
+    "explanation": "Hiện tượng swarming là dấu hiệu rất kinh điển."
+  },
+  {
+    "id": 88,
+    "category": "Bacteriology",
+    "topic": "Comparison",
+    "difficulty": "medium",
+    "question": "Vi khuẩn nào thường tạo khuẩn lạc nhầy do vỏ polysaccharide dày?",
+    "options": [
+      "Proteus",
+      "Shigella",
+      "Klebsiella",
+      "Salmonella"
+    ],
+    "answer": 2,
+    "explanation": "Klebsiella có capsule phát triển mạnh."
+  },
+  {
+    "id": 89,
+    "category": "Bacteriology",
+    "topic": "Vibrio",
+    "difficulty": "medium",
+    "question": "Vibrio cholerae thuộc nhóm nào?",
+    "options": [
+      "Oxidase (+)",
+      "Coagulase (+)",
+      "AFB",
+      "Catalase (-)"
+    ],
+    "answer": 0,
+    "explanation": "Vibrio là oxidase dương tính."
+  },
+  {
+    "id": 90,
+    "category": "Bacteriology",
+    "topic": "Vibrio",
+    "difficulty": "hard",
+    "question": "Nguyên nhân trực tiếp gây tiêu chảy lượng lớn trong bệnh tả là?",
+    "options": [
+      "Hoại tử niêm mạc ruột",
+      "Tăng tiết nước và điện giải",
+      "Xuất huyết đường ruột",
+      "Tắc ruột"
+    ],
+    "answer": 1,
+    "explanation": "Độc tố tả làm tăng cAMP và tăng tiết nước."
+  },
+  {
+    "id": 91,
+    "category": "Bacteriology",
+    "topic": "Tuberculosis",
+    "difficulty": "medium",
+    "question": "Lý do vi khuẩn lao khó nhuộm Gram là gì?",
+    "options": [
+      "Không có vách tế bào",
+      "Có mycolic acid rất cao",
+      "Không có DNA",
+      "Không có peptidoglycan"
+    ],
+    "answer": 1,
+    "explanation": "Mycolic acid làm thuốc nhuộm Gram khó thấm."
+  },
+  {
+    "id": 92,
+    "category": "Bacteriology",
+    "topic": "Tuberculosis",
+    "difficulty": "hard",
+    "question": "Xét nghiệm Mantoux đánh giá chủ yếu loại miễn dịch nào?",
+    "options": [
+      "Dịch thể",
+      "Quá mẫn type I",
+      "Miễn dịch qua trung gian tế bào",
+      "Miễn dịch thụ động"
+    ],
+    "answer": 2,
+    "explanation": "Mantoux dựa trên đáp ứng miễn dịch tế bào."
+  },
+  {
+    "id": 93,
+    "category": "Bacteriology",
+    "topic": "Tuberculosis",
+    "difficulty": "hard",
+    "question": "Xét nghiệm phân tử hiện đại được sử dụng rộng rãi để phát hiện lao và kháng Rifampicin là?",
+    "options": [
+      "VDRL",
+      "Xpert MTB/RIF",
+      "ELISA",
+      "CAMP"
+    ],
+    "answer": 1,
+    "explanation": "Xpert MTB/RIF phát hiện M. tuberculosis và đột biến kháng Rifampicin."
+  },
+  {
+    "id": 94,
+    "category": "Bacteriology",
+    "topic": "Leprosy",
+    "difficulty": "hard",
+    "question": "Điểm khác biệt quan trọng của M. leprae so với M. tuberculosis là?",
+    "options": [
+      "Không có vách tế bào",
+      "Không nuôi cấy nhân tạo thành công",
+      "Không có DNA",
+      "Không gây bệnh ở người"
+    ],
+    "answer": 1,
+    "explanation": "M. leprae chưa được nuôi cấy nhân tạo thành công."
+  },
+  {
+    "id": 95,
+    "category": "Bacteriology",
+    "topic": "Tetanus",
+    "difficulty": "medium",
+    "question": "Biện pháp phòng uốn ván chủ động hiệu quả nhất là?",
+    "options": [
+      "Kháng sinh",
+      "Tetanus toxoid vaccine",
+      "HTIG",
+      "Corticoid"
+    ],
+    "answer": 1,
+    "explanation": "Vaccin giải độc tố là biện pháp phòng chủ động."
+  },
+  {
+    "id": 96,
+    "category": "Bacteriology",
+    "topic": "Tetanus",
+    "difficulty": "hard",
+    "question": "Tetanospasmin gây bệnh do ức chế phóng thích chất dẫn truyền thần kinh nào?",
+    "options": [
+      "GABA và Glycine",
+      "Dopamine",
+      "Acetylcholine",
+      "Histamine"
+    ],
+    "answer": 0,
+    "explanation": "Ức chế neuron ức chế làm xuất hiện co cứng cơ."
+  },
+  {
+    "id": 97,
+    "category": "Bacteriology",
+    "topic": "Syphilis",
+    "difficulty": "medium",
+    "question": "Treponema pallidum thuộc nhóm nào?",
+    "options": [
+      "Song cầu",
+      "Xoắn khuẩn",
+      "Trực khuẩn acid-fast",
+      "Cầu khuẩn Gram dương"
+    ],
+    "answer": 1,
+    "explanation": "T. pallidum là xoắn khuẩn mảnh."
+  },
+  {
+    "id": 98,
+    "category": "Bacteriology",
+    "topic": "Syphilis",
+    "difficulty": "hard",
+    "question": "Giai đoạn nào của giang mai thường có tính lây mạnh nhất do tổn thương da niêm mạc lan rộng?",
+    "options": [
+      "Giai đoạn I",
+      "Giai đoạn II",
+      "Giai đoạn III",
+      "Tiềm tàng muộn"
+    ],
+    "answer": 1,
+    "explanation": "Giang mai II thường có rất nhiều tổn thương chứa xoắn khuẩn."
+  },
+  {
+    "id": 99,
+    "category": "Bacteriology",
+    "topic": "Syphilis",
+    "difficulty": "hard",
+    "question": "Phát biểu nào đúng về T. pallidum?",
+    "options": [
+      "Nuôi cấy dễ trên Blood agar",
+      "Không nuôi cấy thường quy được",
+      "Tạo nha bào",
+      "Oxidase dương tính mạnh"
+    ],
+    "answer": 1,
+    "explanation": "T. pallidum không được nuôi cấy thường quy trong phòng xét nghiệm."
+  },
+  {
+    "id": 100,
+    "category": "Bacteriology",
+    "topic": "Integration",
+    "difficulty": "hard",
+    "question": "Một vi khuẩn là song cầu Gram âm, oxidase (+), phát triển trên Thayer-Martin. Chẩn đoán phù hợp nhất là?",
+    "options": [
+      "Salmonella Typhi",
+      "Neisseria spp.",
+      "Klebsiella pneumoniae",
+      "Proteus mirabilis"
+    ],
+    "answer": 1,
+    "explanation": "Bộ đặc điểm này điển hình cho chi Neisseria."
+  },
+  {
+    "id": 101,
+    "category": "Virology",
+    "topic": "General Virology",
+    "difficulty": "easy",
+    "question": "Đặc điểm bắt buộc phải có ở mọi virus là gì?",
+    "options": [
+      "Màng bọc",
+      "DNA và RNA đồng thời",
+      "Acid nucleic và capsid",
+      "Ribosome"
+    ],
+    "answer": 2,
+    "explanation": "Mọi virus đều có vật chất di truyền (DNA hoặc RNA) và capsid protein."
+  },
+  {
+    "id": 102,
+    "category": "Virology",
+    "topic": "General Virology",
+    "difficulty": "easy",
+    "question": "Virus không thể tự sinh sản bên ngoài tế bào chủ vì thiếu cấu trúc nào?",
+    "options": [
+      "Capsid",
+      "Spike",
+      "Ribosome hoàn chỉnh",
+      "Acid nucleic"
+    ],
+    "answer": 2,
+    "explanation": "Virus phụ thuộc bộ máy tổng hợp protein của tế bào chủ."
+  },
+  {
+    "id": 103,
+    "category": "Virology",
+    "topic": "Structure",
+    "difficulty": "easy",
+    "question": "Vai trò chính của capsid là gì?",
+    "options": [
+      "Tạo năng lượng",
+      "Bảo vệ vật chất di truyền",
+      "Tổng hợp protein",
+      "Tạo kháng thể"
+    ],
+    "answer": 1,
+    "explanation": "Capsid có chức năng bảo vệ bộ gen virus và tham gia xâm nhập tế bào."
+  },
+  {
+    "id": 104,
+    "category": "Virology",
+    "topic": "Structure",
+    "difficulty": "medium",
+    "question": "Capsomere là gì?",
+    "options": [
+      "Đơn vị cấu tạo capsid",
+      "Enzyme của virus",
+      "RNA của virus",
+      "Protein màng tế bào chủ"
+    ],
+    "answer": 0,
+    "explanation": "Capsid được cấu tạo từ nhiều đơn vị capsomere."
+  },
+  {
+    "id": 105,
+    "category": "Virology",
+    "topic": "Structure",
+    "difficulty": "medium",
+    "question": "Envelope của virus thường có nguồn gốc từ đâu?",
+    "options": [
+      "Nhân tế bào chủ",
+      "Màng tế bào chủ",
+      "Ribosome",
+      "Ty thể"
+    ],
+    "answer": 1,
+    "explanation": "Virus có màng bọc thường lấy lớp lipid từ tế bào chủ khi thoát ra."
+  },
+  {
+    "id": 106,
+    "category": "Virology",
+    "topic": "Structure",
+    "difficulty": "medium",
+    "question": "Chức năng quan trọng nhất của glycoprotein spike là gì?",
+    "options": [
+      "Tạo ATP",
+      "Bám vào tế bào chủ",
+      "Tạo kháng thể",
+      "Sao chép DNA"
+    ],
+    "answer": 1,
+    "explanation": "Spike nhận biết receptor và giúp virus bám lên tế bào đích."
+  },
+  {
+    "id": 107,
+    "category": "Virology",
+    "topic": "Structure",
+    "difficulty": "medium",
+    "question": "Virus có màng bọc thường nhạy cảm với yếu tố nào nhất?",
+    "options": [
+      "Cồn và chất tẩy lipid",
+      "Nhiệt độ thấp",
+      "Tia X",
+      "Nước muối sinh lý"
+    ],
+    "answer": 0,
+    "explanation": "Envelope chứa lipid nên dễ bị phá hủy bởi dung môi lipid và cồn."
+  },
+  {
+    "id": 108,
+    "category": "Virology",
+    "topic": "Structure",
+    "difficulty": "medium",
+    "question": "So với virus có màng bọc, virus không màng bọc thường có đặc điểm nào?",
+    "options": [
+      "Kém bền môi trường hơn",
+      "Bền môi trường hơn",
+      "Không có capsid",
+      "Không có acid nucleic"
+    ],
+    "answer": 1,
+    "explanation": "Virus không màng bọc thường chịu được điều kiện môi trường tốt hơn."
+  },
+  {
+    "id": 109,
+    "category": "Virology",
+    "topic": "Classification",
+    "difficulty": "medium",
+    "question": "Hệ thống Baltimore phân loại virus chủ yếu dựa trên?",
+    "options": [
+      "Kích thước",
+      "Vật chủ",
+      "Loại acid nucleic và cách tạo mRNA",
+      "Đường lây"
+    ],
+    "answer": 2,
+    "explanation": "Baltimore classification dựa trên chiến lược biểu hiện thông tin di truyền."
+  },
+  {
+    "id": 110,
+    "category": "Virology",
+    "topic": "Classification",
+    "difficulty": "hard",
+    "question": "Virus có thể chứa đồng thời DNA và RNA trong cùng virion không?",
+    "options": [
+      "Luôn luôn",
+      "Không",
+      "Chỉ virus người",
+      "Chỉ virus động vật"
+    ],
+    "answer": 1,
+    "explanation": "Virus chỉ mang một loại acid nucleic: DNA hoặc RNA."
+  },
+  {
+    "id": 111,
+    "category": "Virology",
+    "topic": "Replication",
+    "difficulty": "easy",
+    "question": "Bước đầu tiên trong chu trình nhiễm virus là gì?",
+    "options": [
+      "Assembly",
+      "Attachment",
+      "Release",
+      "Uncoating"
+    ],
+    "answer": 1,
+    "explanation": "Virus phải bám vào receptor thích hợp trên tế bào chủ."
+  },
+  {
+    "id": 112,
+    "category": "Virology",
+    "topic": "Replication",
+    "difficulty": "medium",
+    "question": "Thuật ngữ 'uncoating' chỉ quá trình nào?",
+    "options": [
+      "Thoát khỏi tế bào",
+      "Giải phóng bộ gen khỏi capsid",
+      "Tạo capsid",
+      "Bám vào receptor"
+    ],
+    "answer": 1,
+    "explanation": "Sau khi vào tế bào, virus phải cởi vỏ để giải phóng vật chất di truyền."
+  },
+  {
+    "id": 113,
+    "category": "Virology",
+    "topic": "Replication",
+    "difficulty": "medium",
+    "question": "Assembly là giai đoạn nào?",
+    "options": [
+      "Bám dính",
+      "Tổng hợp acid nucleic",
+      "Lắp ráp virion mới",
+      "Giải phóng virion"
+    ],
+    "answer": 2,
+    "explanation": "Các thành phần virus được ghép lại tạo virion hoàn chỉnh."
+  },
+  {
+    "id": 114,
+    "category": "Virology",
+    "topic": "Replication",
+    "difficulty": "medium",
+    "question": "Virus có màng bọc thường thoát khỏi tế bào bằng cách nào?",
+    "options": [
+      "Budding",
+      "Phân đôi",
+      "Nảy chồi của vi khuẩn",
+      "Tự tạo màng mới"
+    ],
+    "answer": 0,
+    "explanation": "Budding giúp virus đồng thời lấy được lớp màng bọc."
+  },
+  {
+    "id": 115,
+    "category": "Virology",
+    "topic": "Diagnostics",
+    "difficulty": "easy",
+    "question": "RT-PCR thường được dùng để phát hiện gì?",
+    "options": [
+      "Kháng thể",
+      "Acid nucleic của virus",
+      "Bạch cầu",
+      "Tiểu cầu"
+    ],
+    "answer": 1,
+    "explanation": "RT-PCR phát hiện vật liệu di truyền của virus."
+  },
+  {
+    "id": 116,
+    "category": "Virology",
+    "topic": "Diagnostics",
+    "difficulty": "medium",
+    "question": "ELISA thường được sử dụng để phát hiện?",
+    "options": [
+      "Kháng nguyên hoặc kháng thể",
+      "DNA nhiễm sắc thể",
+      "Ribosome",
+      "Ty thể"
+    ],
+    "answer": 0,
+    "explanation": "ELISA là xét nghiệm miễn dịch thường dùng để phát hiện kháng nguyên hoặc kháng thể."
+  },
+  {
+    "id": 117,
+    "category": "Virology",
+    "topic": "Clinical Case",
+    "difficulty": "hard",
+    "question": "Một chất sát khuẩn phá hủy lớp lipid màng. Nhóm virus nào sẽ bị ảnh hưởng nhiều nhất?",
+    "options": [
+      "Virus có màng bọc",
+      "Virus không màng bọc",
+      "Thực khuẩn thể",
+      "Tất cả như nhau"
+    ],
+    "answer": 0,
+    "explanation": "Envelope lipid là điểm yếu của virus có màng bọc."
+  },
+  {
+    "id": 118,
+    "category": "Virology",
+    "topic": "Clinical Case",
+    "difficulty": "hard",
+    "question": "Một mẫu bệnh phẩm có kết quả PCR dương tính nhưng ELISA kháng thể âm tính. Giải thích hợp lý nhất là gì?",
+    "options": [
+      "Nhiễm rất sớm",
+      "Không nhiễm",
+      "Đã khỏi bệnh lâu",
+      "Lỗi lấy mẫu luôn xảy ra"
+    ],
+    "answer": 0,
+    "explanation": "PCR thường phát hiện được virus sớm trước khi cơ thể tạo đủ kháng thể."
+  },
+  {
+    "id": 119,
+    "category": "Virology",
+    "topic": "Clinical Case",
+    "difficulty": "hard",
+    "question": "Một virus mất khả năng tạo spike trên bề mặt. Chức năng nào bị ảnh hưởng trực tiếp nhất?",
+    "options": [
+      "Bám vào tế bào chủ",
+      "Tổng hợp RNA",
+      "Sao chép DNA",
+      "Tạo ATP"
+    ],
+    "answer": 0,
+    "explanation": "Spike là cấu trúc nhận diện receptor của tế bào đích."
+  },
+  {
+    "id": 120,
+    "category": "Virology",
+    "topic": "Clinical Case",
+    "difficulty": "hard",
+    "question": "Một virus được xác định có RNA sợi đơn và cần tổng hợp mRNA trước khi dịch mã. Hệ thống phân loại nào thường dùng để mô tả chiến lược này?",
+    "options": [
+      "Lancefield",
+      "Baltimore",
+      "Kauffmann-White",
+      "IMViC"
+    ],
+    "answer": 1,
+    "explanation": "Baltimore classification mô tả cách các loại virus tạo mRNA từ bộ gen của chúng."
+  },
+  {
+    "id": 121,
+    "category": "Virology",
+    "topic": "HAV",
+    "difficulty": "easy",
+    "question": "Đường lây truyền chủ yếu của virus viêm gan A (HAV) là gì?",
+    "options": [
+      "Đường máu",
+      "Mẹ sang con",
+      "Phân - miệng",
+      "Quan hệ tình dục"
+    ],
+    "answer": 2,
+    "explanation": "HAV lây chủ yếu theo đường phân - miệng qua nước hoặc thực phẩm nhiễm bẩn."
+  },
+  {
+    "id": 122,
+    "category": "Virology",
+    "topic": "HAV",
+    "difficulty": "medium",
+    "question": "Đặc điểm nào đúng nhất về HAV?",
+    "options": [
+      "Thường gây viêm gan mạn",
+      "Thường gây viêm gan cấp tự giới hạn",
+      "Luôn dẫn đến xơ gan",
+      "Cần HBV để nhân lên"
+    ],
+    "answer": 1,
+    "explanation": "HAV thường gây viêm gan cấp và hiếm khi chuyển mạn tính."
+  },
+  {
+    "id": 123,
+    "category": "Virology",
+    "topic": "HBV",
+    "difficulty": "easy",
+    "question": "HBsAg dương tính cho biết điều gì?",
+    "options": [
+      "Đã khỏi bệnh",
+      "Đã có miễn dịch",
+      "Đang có nhiễm HBV",
+      "Đã tiêm vaccine"
+    ],
+    "answer": 2,
+    "explanation": "HBsAg là kháng nguyên bề mặt, biểu hiện tình trạng nhiễm HBV hiện tại."
+  },
+  {
+    "id": 124,
+    "category": "Virology",
+    "topic": "HBV",
+    "difficulty": "easy",
+    "question": "Anti-HBs dương tính thường cho biết gì?",
+    "options": [
+      "Đã có miễn dịch với HBV",
+      "Đang nhiễm HBV cấp",
+      "Đang nhiễm HDV",
+      "Đang có khả năng lây cao"
+    ],
+    "answer": 0,
+    "explanation": "Anti-HBs xuất hiện sau hồi phục hoặc sau tiêm vaccine."
+  },
+  {
+    "id": 125,
+    "category": "Virology",
+    "topic": "HBV",
+    "difficulty": "medium",
+    "question": "HBeAg dương tính thường phản ánh điều gì?",
+    "options": [
+      "Miễn dịch bảo vệ",
+      "Khả năng lây nhiễm cao",
+      "Đã khỏi bệnh",
+      "Không còn virus"
+    ],
+    "answer": 1,
+    "explanation": "HBeAg liên quan đến sự nhân lên mạnh của virus và khả năng lây truyền cao."
+  },
+  {
+    "id": 126,
+    "category": "Virology",
+    "topic": "HBV",
+    "difficulty": "medium",
+    "question": "Marker nào hữu ích nhất để chẩn đoán viêm gan B cấp?",
+    "options": [
+      "Anti-HBc IgM",
+      "Anti-HBs",
+      "Anti-HBe",
+      "Anti-HBc IgG"
+    ],
+    "answer": 0,
+    "explanation": "Anti-HBc IgM là dấu ấn kinh điển của nhiễm HBV cấp."
+  },
+  {
+    "id": 127,
+    "category": "Virology",
+    "topic": "HBV",
+    "difficulty": "hard",
+    "question": "Bệnh nhân có HBsAg (-), Anti-HBs (+), Anti-HBc (-). Diễn giải phù hợp nhất là gì?",
+    "options": [
+      "Viêm gan B cấp",
+      "Viêm gan B mạn",
+      "Đã tiêm vaccine HBV",
+      "Giai đoạn cửa sổ"
+    ],
+    "answer": 2,
+    "explanation": "Anti-HBs đơn độc thường phản ánh miễn dịch do vaccine."
+  },
+  {
+    "id": 128,
+    "category": "Virology",
+    "topic": "HBV",
+    "difficulty": "hard",
+    "question": "Bệnh nhân có HBsAg (-), Anti-HBs (+), Anti-HBc (+). Diễn giải phù hợp nhất là gì?",
+    "options": [
+      "Đã nhiễm HBV và hồi phục",
+      "Đã tiêm vaccine",
+      "Viêm gan B cấp",
+      "Viêm gan B mạn"
+    ],
+    "answer": 0,
+    "explanation": "Anti-HBc chứng tỏ từng nhiễm HBV tự nhiên, anti-HBs cho thấy đã có miễn dịch."
+  },
+  {
+    "id": 129,
+    "category": "Virology",
+    "topic": "HBV",
+    "difficulty": "hard",
+    "question": "Marker nào thường xuất hiện trong giai đoạn cửa sổ (window period) của HBV?",
+    "options": [
+      "HBsAg",
+      "Anti-HBc IgM",
+      "HBeAg",
+      "Anti-HBs"
+    ],
+    "answer": 1,
+    "explanation": "Anti-HBc IgM là dấu ấn quan trọng nhất trong window period."
+  },
+  {
+    "id": 130,
+    "category": "Virology",
+    "topic": "HBV",
+    "difficulty": "medium",
+    "question": "Biến chứng ác tính quan trọng của nhiễm HBV mạn là gì?",
+    "options": [
+      "Ung thư đại tràng",
+      "Ung thư gan nguyên phát",
+      "Ung thư phổi",
+      "U lympho Hodgkin"
+    ],
+    "answer": 1,
+    "explanation": "HBV là yếu tố nguy cơ lớn của hepatocellular carcinoma."
+  },
+  {
+    "id": 131,
+    "category": "Virology",
+    "topic": "HBV Case",
+    "difficulty": "hard",
+    "question": "Một nhân viên y tế có HBsAg (-), Anti-HBs (+). Thông tin nào hợp lý nhất?",
+    "options": [
+      "Đang lây HBV",
+      "Đã có miễn dịch với HBV",
+      "Đang viêm gan cấp",
+      "Đang viêm gan tối cấp"
+    ],
+    "answer": 1,
+    "explanation": "Anti-HBs dương tính phản ánh miễn dịch bảo vệ."
+  },
+  {
+    "id": 132,
+    "category": "Virology",
+    "topic": "HCV",
+    "difficulty": "easy",
+    "question": "HCV mang bộ gen thuộc loại nào?",
+    "options": [
+      "DNA sợi đôi",
+      "DNA sợi đơn",
+      "RNA",
+      "DNA và RNA"
+    ],
+    "answer": 2,
+    "explanation": "HCV là virus RNA."
+  },
+  {
+    "id": 133,
+    "category": "Virology",
+    "topic": "HCV",
+    "difficulty": "medium",
+    "question": "Đặc điểm nổi bật của HCV so với HAV là gì?",
+    "options": [
+      "Dễ chuyển thành mạn tính hơn",
+      "Lây qua phân-miệng mạnh hơn",
+      "Không gây xơ gan",
+      "Không lây qua đường máu"
+    ],
+    "answer": 0,
+    "explanation": "HCV có tỷ lệ tiến triển mạn tính cao."
+  },
+  {
+    "id": 134,
+    "category": "Virology",
+    "topic": "HCV",
+    "difficulty": "medium",
+    "question": "Xét nghiệm nào giúp đánh giá trực tiếp sự hiện diện của HCV?",
+    "options": [
+      "HBsAg",
+      "HCV RNA",
+      "Anti-HBs",
+      "Mantoux"
+    ],
+    "answer": 1,
+    "explanation": "HCV RNA phản ánh sự hiện diện và nhân lên của virus."
+  },
+  {
+    "id": 135,
+    "category": "Virology",
+    "topic": "HCV",
+    "difficulty": "hard",
+    "question": "Bệnh nhân Anti-HCV dương tính nhưng HCV RNA âm tính. Điều nào có thể giải thích?",
+    "options": [
+      "Chưa từng nhiễm",
+      "Đã từng nhiễm và hiện không còn virus hoạt động",
+      "Đang nhiễm HBV",
+      "Đang nhiễm HDV"
+    ],
+    "answer": 1,
+    "explanation": "Kháng thể có thể tồn tại sau khi virus đã được loại trừ."
+  },
+  {
+    "id": 136,
+    "category": "Virology",
+    "topic": "HDV",
+    "difficulty": "easy",
+    "question": "HDV có đặc điểm đặc biệt nào?",
+    "options": [
+      "Tự nhân lên hoàn toàn",
+      "Phụ thuộc HBV",
+      "Phụ thuộc HCV",
+      "Không có acid nucleic"
+    ],
+    "answer": 1,
+    "explanation": "HDV là virus khiếm khuyết cần sự hiện diện của HBV."
+  },
+  {
+    "id": 137,
+    "category": "Virology",
+    "topic": "HDV",
+    "difficulty": "medium",
+    "question": "Yếu tố nào bắt buộc để HDV hoàn thành chu trình nhiễm?",
+    "options": [
+      "Anti-HBs",
+      "HBsAg",
+      "HBeAg",
+      "Anti-HBc"
+    ],
+    "answer": 1,
+    "explanation": "HDV sử dụng HBsAg để hình thành hạt virus hoàn chỉnh."
+  },
+  {
+    "id": 138,
+    "category": "Virology",
+    "topic": "HDV Case",
+    "difficulty": "hard",
+    "question": "Một bệnh nhân chưa từng nhiễm HBV có nguy cơ nhiễm HDV đơn độc hay không?",
+    "options": [
+      "Có",
+      "Không",
+      "Chỉ ở trẻ em",
+      "Chỉ ở người già"
+    ],
+    "answer": 1,
+    "explanation": "Không có HBV thì HDV không thể duy trì nhiễm trùng hiệu quả."
+  },
+  {
+    "id": 139,
+    "category": "Virology",
+    "topic": "Integrated Case",
+    "difficulty": "hard",
+    "question": "Bệnh nhân có HBsAg (+), HBeAg (+), Anti-HBc IgM (+). Chẩn đoán phù hợp nhất là?",
+    "options": [
+      "Miễn dịch sau vaccine",
+      "Viêm gan B cấp đang hoạt động",
+      "Đã khỏi bệnh",
+      "Không nhiễm HBV"
+    ],
+    "answer": 1,
+    "explanation": "Sự hiện diện của IgM anti-HBc cùng HBsAg gợi ý nhiễm HBV cấp."
+  },
+  {
+    "id": 140,
+    "category": "Virology",
+    "topic": "Integrated Case",
+    "difficulty": "hard",
+    "question": "Trong số HAV, HBV, HCV và HDV, virus nào cần một virus khác để hoàn tất chu trình sống?",
+    "options": [
+      "HAV",
+      "HBV",
+      "HCV",
+      "HDV"
+    ],
+    "answer": 3,
+    "explanation": "HDV là virus khiếm khuyết phụ thuộc HBV."
+  },
+  {
+    "id": 141,
+    "category": "Virology",
+    "topic": "HIV",
+    "difficulty": "easy",
+    "question": "HIV thuộc họ virus nào?",
+    "options": [
+      "Herpesviridae",
+      "Retroviridae",
+      "Orthomyxoviridae",
+      "Flaviviridae"
+    ],
+    "answer": 1,
+    "explanation": "HIV thuộc họ Retroviridae và là một retrovirus."
+  },
+  {
+    "id": 142,
+    "category": "Virology",
+    "topic": "HIV",
+    "difficulty": "easy",
+    "question": "Bộ gen của HIV là gì?",
+    "options": [
+      "DNA sợi đôi",
+      "DNA sợi đơn",
+      "RNA sợi đơn",
+      "DNA và RNA"
+    ],
+    "answer": 2,
+    "explanation": "HIV là retrovirus mang RNA sợi đơn."
+  },
+  {
+    "id": 143,
+    "category": "Virology",
+    "topic": "HIV",
+    "difficulty": "easy",
+    "question": "Enzyme đặc trưng của HIV là?",
+    "options": [
+      "Catalase",
+      "Reverse transcriptase",
+      "Coagulase",
+      "Urease"
+    ],
+    "answer": 1,
+    "explanation": "Reverse transcriptase chuyển RNA virus thành DNA."
+  },
+  {
+    "id": 144,
+    "category": "Virology",
+    "topic": "HIV",
+    "difficulty": "easy",
+    "question": "Tế bào đích chính của HIV là?",
+    "options": [
+      "Hồng cầu",
+      "Tiểu cầu",
+      "Tế bào T CD4+",
+      "Bạch cầu ái toan"
+    ],
+    "answer": 2,
+    "explanation": "HIV ưu tiên tấn công tế bào T CD4+."
+  },
+  {
+    "id": 145,
+    "category": "Virology",
+    "topic": "HIV",
+    "difficulty": "medium",
+    "question": "Protein gp120 của HIV có vai trò gì?",
+    "options": [
+      "Tổng hợp DNA",
+      "Gắn vào thụ thể CD4",
+      "Cắt protein virus",
+      "Tạo năng lượng"
+    ],
+    "answer": 1,
+    "explanation": "gp120 giúp virus nhận diện và bám vào tế bào đích."
+  },
+  {
+    "id": 146,
+    "category": "Virology",
+    "topic": "HIV",
+    "difficulty": "medium",
+    "question": "Đồng thụ thể CCR5 tham gia vào giai đoạn nào?",
+    "options": [
+      "Bám và xâm nhập tế bào",
+      "Phiên mã ngược",
+      "Lắp ráp virion",
+      "Thoát virus"
+    ],
+    "answer": 0,
+    "explanation": "CCR5 cùng CD4 hỗ trợ HIV xâm nhập tế bào."
+  },
+  {
+    "id": 147,
+    "category": "Virology",
+    "topic": "HIV",
+    "difficulty": "medium",
+    "question": "p24 là gì?",
+    "options": [
+      "Một glycoprotein màng",
+      "Kháng nguyên capsid của HIV",
+      "Một loại thuốc ARV",
+      "Một cytokine"
+    ],
+    "answer": 1,
+    "explanation": "p24 là kháng nguyên capsid quan trọng trong chẩn đoán sớm."
+  },
+  {
+    "id": 148,
+    "category": "Virology",
+    "topic": "HIV",
+    "difficulty": "medium",
+    "question": "Window period của HIV là gì?",
+    "options": [
+      "Giai đoạn kháng thể chưa phát hiện được",
+      "Giai đoạn AIDS",
+      "Giai đoạn phục hồi hoàn toàn",
+      "Giai đoạn điều trị ARV"
+    ],
+    "answer": 0,
+    "explanation": "Đây là giai đoạn mới nhiễm nhưng xét nghiệm kháng thể có thể còn âm tính."
+  },
+  {
+    "id": 149,
+    "category": "Virology",
+    "topic": "HIV",
+    "difficulty": "medium",
+    "question": "ELISA trong HIV thường được dùng để?",
+    "options": [
+      "Sàng lọc",
+      "Định danh vi khuẩn",
+      "Nhuộm tế bào",
+      "Nuôi cấy virus"
+    ],
+    "answer": 0,
+    "explanation": "ELISA là xét nghiệm sàng lọc HIV phổ biến."
+  },
+  {
+    "id": 150,
+    "category": "Virology",
+    "topic": "HIV",
+    "difficulty": "medium",
+    "question": "PCR trong HIV chủ yếu được sử dụng để?",
+    "options": [
+      "Đếm hồng cầu",
+      "Phát hiện RNA virus",
+      "Định lượng bilirubin",
+      "Đánh giá đông máu"
+    ],
+    "answer": 1,
+    "explanation": "PCR giúp phát hiện và định lượng HIV RNA."
+  },
+  {
+    "id": 151,
+    "category": "Virology",
+    "topic": "HIV Case",
+    "difficulty": "hard",
+    "question": "Bệnh nhân mới phơi nhiễm HIV được 7 ngày. Xét nghiệm nào có khả năng phát hiện sớm nhất?",
+    "options": [
+      "ELISA kháng thể",
+      "Western Blot",
+      "HIV RNA PCR",
+      "CD4"
+    ],
+    "answer": 2,
+    "explanation": "PCR phát hiện vật liệu di truyền sớm nhất sau nhiễm."
+  },
+  {
+    "id": 152,
+    "category": "Virology",
+    "topic": "HIV Case",
+    "difficulty": "hard",
+    "question": "Người bệnh có CD4 = 150 tế bào/mm³. Nguy cơ nào tăng rõ rệt?",
+    "options": [
+      "Nhiễm trùng cơ hội",
+      "Tăng hồng cầu",
+      "Tăng tiểu cầu",
+      "Đái tháo đường"
+    ],
+    "answer": 0,
+    "explanation": "CD4 thấp làm tăng nguy cơ nhiễm trùng cơ hội."
+  },
+  {
+    "id": 153,
+    "category": "Virology",
+    "topic": "HIV Case",
+    "difficulty": "hard",
+    "question": "Bệnh nhân HIV nhập viện vì viêm phổi do Pneumocystis jirovecii. CD4 nhiều khả năng ở mức nào?",
+    "options": [
+      ">500",
+      "350-500",
+      "200-350",
+      "<200"
+    ],
+    "answer": 3,
+    "explanation": "PCP thường xuất hiện khi CD4 dưới 200 tế bào/mm³."
+  },
+  {
+    "id": 154,
+    "category": "Virology",
+    "topic": "HIV",
+    "difficulty": "medium",
+    "question": "Enzyme integrase của HIV có chức năng gì?",
+    "options": [
+      "Cắt protein",
+      "Gắn DNA virus vào DNA tế bào chủ",
+      "Tạo RNA",
+      "Phá hủy CD4"
+    ],
+    "answer": 1,
+    "explanation": "Integrase giúp DNA virus hòa nhập vào bộ gen tế bào."
+  },
+  {
+    "id": 155,
+    "category": "Virology",
+    "topic": "HIV",
+    "difficulty": "medium",
+    "question": "Protease của HIV tham gia giai đoạn nào?",
+    "options": [
+      "Trưởng thành virion",
+      "Xâm nhập tế bào",
+      "Bám receptor",
+      "Tạo CD4"
+    ],
+    "answer": 0,
+    "explanation": "Protease cắt polyprotein tạo virion trưởng thành."
+  },
+  {
+    "id": 156,
+    "category": "Virology",
+    "topic": "Transmission",
+    "difficulty": "easy",
+    "question": "Đường lây truyền nào sau đây có nguy cơ truyền HIV?",
+    "options": [
+      "Bắt tay",
+      "Dùng chung bát đũa",
+      "Quan hệ tình dục không bảo vệ",
+      "Muỗi đốt"
+    ],
+    "answer": 2,
+    "explanation": "Quan hệ tình dục không an toàn là đường lây truyền quan trọng."
+  },
+  {
+    "id": 157,
+    "category": "Virology",
+    "topic": "Transmission",
+    "difficulty": "easy",
+    "question": "HIV có lây qua bắt tay thông thường không?",
+    "options": [
+      "Có",
+      "Không"
+    ],
+    "answer": 1,
+    "explanation": "Tiếp xúc xã hội thông thường không làm lây HIV."
+  },
+  {
+    "id": 158,
+    "category": "Virology",
+    "topic": "HIV",
+    "difficulty": "medium",
+    "question": "Tải lượng virus HIV phản ánh điều gì?",
+    "options": [
+      "Mức độ nhân lên của virus",
+      "Số lượng hồng cầu",
+      "Chức năng gan",
+      "Mức đường huyết"
+    ],
+    "answer": 0,
+    "explanation": "Viral load giúp đánh giá hoạt động của virus và đáp ứng điều trị."
+  },
+  {
+    "id": 159,
+    "category": "Virology",
+    "topic": "HIV Case",
+    "difficulty": "hard",
+    "question": "Bệnh nhân HIV điều trị ARV hiệu quả. Kết quả nào được mong đợi nhất?",
+    "options": [
+      "Viral load giảm",
+      "HBsAg âm tính",
+      "IgM tăng cao",
+      "Tăng HBeAg"
+    ],
+    "answer": 0,
+    "explanation": "Mục tiêu chính của ARV là ức chế sự nhân lên của HIV."
+  },
+  {
+    "id": 160,
+    "category": "Virology",
+    "topic": "HIV Case",
+    "difficulty": "hard",
+    "question": "Một người có ELISA HIV dương tính, PCR HIV RNA dương tính và CD4 giảm. Cách diễn giải phù hợp nhất là?",
+    "options": [
+      "Không nhiễm HIV",
+      "Đã tiêm vaccine HIV",
+      "Đang nhiễm HIV",
+      "Đã khỏi HIV"
+    ],
+    "answer": 2,
+    "explanation": "Sự hiện diện của RNA virus cùng đáp ứng huyết thanh học xác nhận nhiễm HIV."
+  },
+  {
+    "id": 161,
+    "category": "Virology",
+    "topic": "Influenza",
+    "difficulty": "easy",
+    "question": "Virus cúm thuộc họ nào?",
+    "options": [
+      "Flaviviridae",
+      "Orthomyxoviridae",
+      "Retroviridae",
+      "Herpesviridae"
+    ],
+    "answer": 1,
+    "explanation": "Virus cúm thuộc họ Orthomyxoviridae."
+  },
+  {
+    "id": 162,
+    "category": "Virology",
+    "topic": "Influenza",
+    "difficulty": "medium",
+    "question": "Tên chủng cúm A/H1N1 được đặt dựa trên hai protein nào?",
+    "options": [
+      "Capsid và Envelope",
+      "HA và NA",
+      "gp120 và gp41",
+      "HBsAg và HBeAg"
+    ],
+    "answer": 1,
+    "explanation": "H là Hemagglutinin, N là Neuraminidase."
+  },
+  {
+    "id": 163,
+    "category": "Virology",
+    "topic": "Influenza",
+    "difficulty": "hard",
+    "question": "Antigenic drift là gì?",
+    "options": [
+      "Đột biến nhỏ tích lũy theo thời gian",
+      "Trao đổi toàn bộ bộ gen",
+      "Mất capsid",
+      "Tạo chủng vi khuẩn mới"
+    ],
+    "answer": 0,
+    "explanation": "Antigenic drift là các đột biến nhỏ tích lũy gây thay đổi kháng nguyên."
+  },
+  {
+    "id": 164,
+    "category": "Virology",
+    "topic": "Influenza",
+    "difficulty": "hard",
+    "question": "Virus cúm A có khả năng gây đại dịch chủ yếu nhờ cơ chế nào?",
+    "options": [
+      "Antigenic shift",
+      "Catalase",
+      "Coagulase",
+      "Nha bào"
+    ],
+    "answer": 0,
+    "explanation": "Antigenic shift tạo ra chủng virus mới với kháng nguyên khác biệt lớn."
+  },
+  {
+    "id": 165,
+    "category": "Virology",
+    "topic": "Influenza Case",
+    "difficulty": "hard",
+    "question": "Một bệnh nhân bị cúm hằng năm dù đã từng mắc trước đó. Giải thích phù hợp nhất là gì?",
+    "options": [
+      "Virus tạo nha bào",
+      "Antigenic drift",
+      "Virus không có kháng nguyên",
+      "Kháng thể không tồn tại"
+    ],
+    "answer": 1,
+    "explanation": "Sự thay đổi kháng nguyên khiến miễn dịch cũ giảm hiệu quả."
+  },
+  {
+    "id": 166,
+    "category": "Virology",
+    "topic": "Dengue",
+    "difficulty": "easy",
+    "question": "Virus Dengue được truyền chủ yếu bởi loài muỗi nào?",
+    "options": [
+      "Anopheles",
+      "Aedes",
+      "Culex",
+      "Mansonia"
+    ],
+    "answer": 1,
+    "explanation": "Muỗi Aedes aegypti là vector quan trọng nhất."
+  },
+  {
+    "id": 167,
+    "category": "Virology",
+    "topic": "Dengue",
+    "difficulty": "easy",
+    "question": "Dengue có bao nhiêu typ huyết thanh chính?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "answer": 2,
+    "explanation": "DENV-1, DENV-2, DENV-3 và DENV-4."
+  },
+  {
+    "id": 168,
+    "category": "Virology",
+    "topic": "Dengue",
+    "difficulty": "medium",
+    "question": "Xét nghiệm NS1 thường hữu ích nhất ở giai đoạn nào?",
+    "options": [
+      "Giai đoạn sớm",
+      "Sau 6 tháng",
+      "Giai đoạn hồi phục muộn",
+      "Không dùng trong Dengue"
+    ],
+    "answer": 0,
+    "explanation": "NS1 hỗ trợ chẩn đoán sớm Dengue trong những ngày đầu."
+  },
+  {
+    "id": 169,
+    "category": "Virology",
+    "topic": "Dengue Case",
+    "difficulty": "hard",
+    "question": "Bệnh nhân sốt 3 ngày, đau cơ, đau hốc mắt, NS1 dương tính. Chẩn đoán phù hợp nhất?",
+    "options": [
+      "Sởi",
+      "Dengue",
+      "Quai bị",
+      "Viêm não Nhật Bản"
+    ],
+    "answer": 1,
+    "explanation": "Đây là tình huống kinh điển của sốt xuất huyết Dengue."
+  },
+  {
+    "id": 170,
+    "category": "Virology",
+    "topic": "Dengue",
+    "difficulty": "hard",
+    "question": "Biến chứng nguy hiểm nhất của sốt xuất huyết Dengue là?",
+    "options": [
+      "Viêm họng",
+      "Sốc do thoát huyết tương",
+      "Táo bón",
+      "Viêm tai giữa"
+    ],
+    "answer": 1,
+    "explanation": "Sốc Dengue là nguyên nhân tử vong chính."
+  },
+  {
+    "id": 171,
+    "category": "Virology",
+    "topic": "Measles",
+    "difficulty": "easy",
+    "question": "Tác nhân gây bệnh sởi là gì?",
+    "options": [
+      "Virus sởi",
+      "Rubella virus",
+      "EBV",
+      "CMV"
+    ],
+    "answer": 0,
+    "explanation": "Virus sởi là căn nguyên của bệnh sởi."
+  },
+  {
+    "id": 172,
+    "category": "Virology",
+    "topic": "Measles",
+    "difficulty": "medium",
+    "question": "Dấu Koplik thường gặp trong bệnh nào?",
+    "options": [
+      "Quai bị",
+      "Sởi",
+      "Dại",
+      "Cúm"
+    ],
+    "answer": 1,
+    "explanation": "Hạt Koplik là dấu hiệu điển hình của sởi."
+  },
+  {
+    "id": 173,
+    "category": "Virology",
+    "topic": "Measles Case",
+    "difficulty": "hard",
+    "question": "Trẻ sốt, viêm kết mạc, ho, xuất hiện hạt Koplik trong miệng rồi phát ban. Chẩn đoán phù hợp nhất?",
+    "options": [
+      "Sởi",
+      "Rubella",
+      "Dengue",
+      "Quai bị"
+    ],
+    "answer": 0,
+    "explanation": "Đây là bệnh cảnh kinh điển của sởi."
+  },
+  {
+    "id": 174,
+    "category": "Virology",
+    "topic": "Mumps",
+    "difficulty": "easy",
+    "question": "Virus quai bị thường gây viêm cơ quan nào nổi bật nhất?",
+    "options": [
+      "Tuyến mang tai",
+      "Gan",
+      "Thận",
+      "Ruột non"
+    ],
+    "answer": 0,
+    "explanation": "Viêm tuyến mang tai là biểu hiện đặc trưng."
+  },
+  {
+    "id": 175,
+    "category": "Virology",
+    "topic": "Mumps Case",
+    "difficulty": "hard",
+    "question": "Thanh niên sốt, sưng đau vùng tuyến mang tai hai bên. Chẩn đoán phù hợp nhất là?",
+    "options": [
+      "Sởi",
+      "Quai bị",
+      "Dại",
+      "Cúm"
+    ],
+    "answer": 1,
+    "explanation": "Sưng đau tuyến mang tai là dấu hiệu điển hình của quai bị."
+  },
+  {
+    "id": 176,
+    "category": "Virology",
+    "topic": "Rabies",
+    "difficulty": "easy",
+    "question": "Virus dại lây truyền chủ yếu bằng cách nào?",
+    "options": [
+      "Nước uống",
+      "Giọt bắn",
+      "Động vật cắn",
+      "Muỗi đốt"
+    ],
+    "answer": 2,
+    "explanation": "Nước bọt động vật mắc bệnh là nguồn lây quan trọng."
+  },
+  {
+    "id": 177,
+    "category": "Virology",
+    "topic": "Rabies Case",
+    "difficulty": "hard",
+    "question": "Người bị chó nghi dại cắn, hai tháng sau xuất hiện sợ nước và co thắt họng khi uống nước. Chẩn đoán phù hợp nhất là?",
+    "options": [
+      "Uốn ván",
+      "Dại",
+      "Viêm não Nhật Bản",
+      "Sởi"
+    ],
+    "answer": 1,
+    "explanation": "Sợ nước là triệu chứng kinh điển của bệnh dại."
+  },
+  {
+    "id": 178,
+    "category": "Virology",
+    "topic": "JEV",
+    "difficulty": "medium",
+    "question": "Virus viêm não Nhật Bản được truyền bởi vector nào?",
+    "options": [
+      "Aedes",
+      "Culex",
+      "Anopheles",
+      "Ruồi cát"
+    ],
+    "answer": 1,
+    "explanation": "Culex là vector truyền bệnh quan trọng."
+  },
+  {
+    "id": 179,
+    "category": "Virology",
+    "topic": "JEV Case",
+    "difficulty": "hard",
+    "question": "Trẻ sốt cao, rối loạn tri giác, co giật, sống tại vùng lưu hành bệnh do muỗi truyền. Chẩn đoán cần nghĩ đến là?",
+    "options": [
+      "Quai bị",
+      "Viêm não Nhật Bản",
+      "Dại",
+      "Sởi"
+    ],
+    "answer": 1,
+    "explanation": "Đây là bệnh cảnh điển hình của viêm não Nhật Bản."
+  },
+  {
+    "id": 180,
+    "category": "Virology",
+    "topic": "MMR",
+    "difficulty": "medium",
+    "question": "Vaccine MMR giúp phòng những bệnh nào?",
+    "options": [
+      "Sởi - Quai bị - Rubella",
+      "Sởi - Dại - Rubella",
+      "Cúm - Quai bị - Rubella",
+      "Dại - Dengue - Sởi"
+    ],
+    "answer": 0,
+    "explanation": "MMR là vaccine phối hợp phòng Sởi, Quai bị và Rubella."
+  },
+  {
+    "id": 181,
+    "category": "Immunology",
+    "topic": "General",
+    "difficulty": "easy",
+    "question": "Kháng nguyên là gì?",
+    "options": [
+      "Chất có khả năng kích thích đáp ứng miễn dịch",
+      "Kháng thể",
+      "Bạch cầu",
+      "Cytokine"
+    ],
+    "answer": 0,
+    "explanation": "Kháng nguyên là chất được hệ miễn dịch nhận diện và có thể gây đáp ứng miễn dịch."
+  },
+  {
+    "id": 182,
+    "category": "Immunology",
+    "topic": "General",
+    "difficulty": "easy",
+    "question": "Kháng thể được sản xuất bởi tế bào nào?",
+    "options": [
+      "Neutrophil",
+      "Tương bào",
+      "NK",
+      "Monocyte"
+    ],
+    "answer": 1,
+    "explanation": "Tương bào là dạng biệt hóa của lympho B."
+  },
+  {
+    "id": 183,
+    "category": "Immunology",
+    "topic": "General",
+    "difficulty": "medium",
+    "question": "Epitope là gì?",
+    "options": [
+      "Vị trí của kháng nguyên được kháng thể nhận diện",
+      "Toàn bộ kháng nguyên",
+      "Kháng thể hoàn chỉnh",
+      "Lympho T"
+    ],
+    "answer": 0,
+    "explanation": "Epitope là quyết định kháng nguyên."
+  },
+  {
+    "id": 184,
+    "category": "Immunology",
+    "topic": "General",
+    "difficulty": "medium",
+    "question": "Paratope nằm ở đâu?",
+    "options": [
+      "Trên kháng nguyên",
+      "Trên kháng thể",
+      "Trong nhân tế bào",
+      "Trên bổ thể"
+    ],
+    "answer": 1,
+    "explanation": "Paratope là vị trí gắn đặc hiệu của kháng thể."
+  },
+  {
+    "id": 185,
+    "category": "Immunology",
+    "topic": "Innate Immunity",
+    "difficulty": "easy",
+    "question": "Miễn dịch bẩm sinh có đặc điểm nào?",
+    "options": [
+      "Đặc hiệu cao",
+      "Có trí nhớ miễn dịch",
+      "Đáp ứng nhanh",
+      "Chỉ xuất hiện sau tiêm vaccine"
+    ],
+    "answer": 2,
+    "explanation": "Miễn dịch bẩm sinh là hàng rào bảo vệ đầu tiên."
+  },
+  {
+    "id": 186,
+    "category": "Immunology",
+    "topic": "Adaptive Immunity",
+    "difficulty": "easy",
+    "question": "Miễn dịch thích nghi có đặc điểm nổi bật nào?",
+    "options": [
+      "Không đặc hiệu",
+      "Có trí nhớ miễn dịch",
+      "Không cần kháng nguyên",
+      "Không liên quan lympho"
+    ],
+    "answer": 1,
+    "explanation": "Trí nhớ miễn dịch là đặc điểm quan trọng của miễn dịch thích nghi."
+  },
+  {
+    "id": 187,
+    "category": "Immunology",
+    "topic": "Cells",
+    "difficulty": "medium",
+    "question": "Tế bào NK thuộc loại miễn dịch nào?",
+    "options": [
+      "Miễn dịch bẩm sinh",
+      "Miễn dịch dịch thể",
+      "Miễn dịch thụ động",
+      "Miễn dịch vaccine"
+    ],
+    "answer": 0,
+    "explanation": "NK là thành phần của miễn dịch bẩm sinh."
+  },
+  {
+    "id": 188,
+    "category": "Immunology",
+    "topic": "Cells",
+    "difficulty": "medium",
+    "question": "Lympho B biệt hóa thành tế bào nào để tiết kháng thể?",
+    "options": [
+      "T helper",
+      "NK",
+      "Tương bào",
+      "Đại thực bào"
+    ],
+    "answer": 2,
+    "explanation": "Tương bào là tế bào sản xuất kháng thể."
+  },
+  {
+    "id": 189,
+    "category": "Immunology",
+    "topic": "Cells",
+    "difficulty": "medium",
+    "question": "Đại thực bào có vai trò quan trọng nhất là?",
+    "options": [
+      "Thực bào",
+      "Tạo hồng cầu",
+      "Tạo insulin",
+      "Tạo kháng thể"
+    ],
+    "answer": 0,
+    "explanation": "Đại thực bào là tế bào thực bào chuyên nghiệp."
+  },
+  {
+    "id": 190,
+    "category": "Immunology",
+    "topic": "General",
+    "difficulty": "medium",
+    "question": "Miễn dịch chủ động nhân tạo có được nhờ?",
+    "options": [
+      "Tiêm vaccine",
+      "Truyền huyết thanh",
+      "Truyền máu",
+      "Ghép tủy"
+    ],
+    "answer": 0,
+    "explanation": "Vaccine tạo đáp ứng miễn dịch chủ động."
+  },
+  {
+    "id": 191,
+    "category": "Immunology",
+    "topic": "Antibody",
+    "difficulty": "easy",
+    "question": "IgM là kháng thể xuất hiện khi nào?",
+    "options": [
+      "Sớm nhất trong đáp ứng nguyên phát",
+      "Muộn nhất",
+      "Chỉ ở thai nhi",
+      "Chỉ ở niêm mạc"
+    ],
+    "answer": 0,
+    "explanation": "IgM là dấu ấn của đáp ứng miễn dịch nguyên phát."
+  },
+  {
+    "id": 192,
+    "category": "Immunology",
+    "topic": "Antibody",
+    "difficulty": "easy",
+    "question": "IgG là loại kháng thể nhiều nhất trong huyết thanh?",
+    "options": [
+      "Đúng",
+      "Sai"
+    ],
+    "answer": 0,
+    "explanation": "IgG là lớp immunoglobulin chiếm tỷ lệ cao nhất trong huyết thanh."
+  },
+  {
+    "id": 193,
+    "category": "Immunology",
+    "topic": "Antibody",
+    "difficulty": "medium",
+    "question": "Loại kháng thể nào qua được nhau thai?",
+    "options": [
+      "IgM",
+      "IgE",
+      "IgG",
+      "IgA"
+    ],
+    "answer": 2,
+    "explanation": "IgG là kháng thể duy nhất qua nhau thai hiệu quả."
+  },
+  {
+    "id": 194,
+    "category": "Immunology",
+    "topic": "Antibody",
+    "difficulty": "medium",
+    "question": "IgA đóng vai trò quan trọng nhất ở đâu?",
+    "options": [
+      "Niêm mạc",
+      "Tủy xương",
+      "Gan",
+      "Tim"
+    ],
+    "answer": 0,
+    "explanation": "IgA là kháng thể chủ lực tại bề mặt niêm mạc."
+  },
+  {
+    "id": 195,
+    "category": "Immunology",
+    "topic": "Antibody",
+    "difficulty": "medium",
+    "question": "IgE liên quan mạnh nhất đến hiện tượng nào?",
+    "options": [
+      "Dị ứng",
+      "Viêm gan",
+      "Thiếu máu",
+      "Đái tháo đường"
+    ],
+    "answer": 0,
+    "explanation": "IgE tham gia phản ứng dị ứng và chống ký sinh trùng."
+  },
+  {
+    "id": 196,
+    "category": "Immunology",
+    "topic": "Antibody",
+    "difficulty": "medium",
+    "question": "IgD thường được tìm thấy trên bề mặt của tế bào nào?",
+    "options": [
+      "Lympho B",
+      "NK",
+      "Neutrophil",
+      "Monocyte"
+    ],
+    "answer": 0,
+    "explanation": "IgD đóng vai trò thụ thể trên lympho B."
+  },
+  {
+    "id": 197,
+    "category": "Immunology",
+    "topic": "Antibody",
+    "difficulty": "hard",
+    "question": "Loại kháng thể nào thường tăng cao khi nhiễm ký sinh trùng?",
+    "options": [
+      "IgM",
+      "IgG",
+      "IgA",
+      "IgE"
+    ],
+    "answer": 3,
+    "explanation": "IgE thường tăng trong bệnh ký sinh trùng và dị ứng."
+  },
+  {
+    "id": 198,
+    "category": "Immunology",
+    "topic": "Antibody",
+    "difficulty": "medium",
+    "question": "Kháng thể nào là dấu hiệu của nhiễm trùng cấp mới xảy ra?",
+    "options": [
+      "IgM",
+      "IgG",
+      "IgA",
+      "IgE"
+    ],
+    "answer": 0,
+    "explanation": "IgM tăng sớm trong nhiễm trùng cấp."
+  },
+  {
+    "id": 199,
+    "category": "Immunology",
+    "topic": "Antibody",
+    "difficulty": "hard",
+    "question": "Kháng thể nào đóng vai trò quan trọng nhất trong đáp ứng miễn dịch thứ phát?",
+    "options": [
+      "IgM",
+      "IgG",
+      "IgE",
+      "IgD"
+    ],
+    "answer": 1,
+    "explanation": "IgG tăng mạnh khi cơ thể gặp lại kháng nguyên."
+  },
+  {
+    "id": 200,
+    "category": "Immunology",
+    "topic": "Antibody",
+    "difficulty": "medium",
+    "question": "Sữa mẹ giàu loại kháng thể nào nhất?",
+    "options": [
+      "IgA",
+      "IgM",
+      "IgG",
+      "IgD"
+    ],
+    "answer": 0,
+    "explanation": "IgA tiết giúp bảo vệ niêm mạc trẻ sơ sinh."
+  },
+  {
+    "id": 201,
+    "category": "Immunology",
+    "topic": "Clinical Case",
+    "difficulty": "hard",
+    "question": "Trẻ sơ sinh nhận miễn dịch thụ động tự nhiên từ mẹ chủ yếu thông qua kháng thể nào?",
+    "options": [
+      "IgA",
+      "IgG",
+      "IgM",
+      "IgE"
+    ],
+    "answer": 1,
+    "explanation": "IgG đi qua nhau thai cung cấp miễn dịch thụ động cho trẻ."
+  },
+  {
+    "id": 202,
+    "category": "Immunology",
+    "topic": "Clinical Case",
+    "difficulty": "hard",
+    "question": "Một người vừa tiêm vaccine viêm gan B. Loại miễn dịch nào được tạo ra?",
+    "options": [
+      "Thụ động tự nhiên",
+      "Thụ động nhân tạo",
+      "Chủ động nhân tạo",
+      "Chủ động tự nhiên"
+    ],
+    "answer": 2,
+    "explanation": "Vaccine tạo miễn dịch chủ động nhân tạo."
+  },
+  {
+    "id": 203,
+    "category": "Immunology",
+    "topic": "Clinical Case",
+    "difficulty": "hard",
+    "question": "Người bị rắn cắn được tiêm huyết thanh kháng nọc. Đây là loại miễn dịch nào?",
+    "options": [
+      "Chủ động tự nhiên",
+      "Chủ động nhân tạo",
+      "Thụ động nhân tạo",
+      "Thụ động tự nhiên"
+    ],
+    "answer": 2,
+    "explanation": "Huyết thanh cung cấp sẵn kháng thể."
+  },
+  {
+    "id": 204,
+    "category": "Immunology",
+    "topic": "Clinical Case",
+    "difficulty": "hard",
+    "question": "Một người xuất hiện phản vệ vài phút sau tiêm thuốc. Loại kháng thể liên quan nhất là?",
+    "options": [
+      "IgG",
+      "IgM",
+      "IgA",
+      "IgE"
+    ],
+    "answer": 3,
+    "explanation": "Phản vệ là phản ứng quá mẫn liên quan IgE."
+  },
+  {
+    "id": 205,
+    "category": "Immunology",
+    "topic": "Clinical Case",
+    "difficulty": "hard",
+    "question": "Bệnh nhân có IgM dương tính nhưng IgG âm tính. Điều này thường gợi ý gì?",
+    "options": [
+      "Nhiễm trùng mới xảy ra",
+      "Đã nhiễm lâu",
+      "Đã khỏi bệnh từ lâu",
+      "Đã tiêm vaccine từ lâu"
+    ],
+    "answer": 0,
+    "explanation": "IgM xuất hiện sớm trong giai đoạn nhiễm cấp."
+  },
+  {
+    "id": 206,
+    "category": "Immunology",
+    "topic": "Clinical Case",
+    "difficulty": "hard",
+    "question": "Một người có nồng độ IgE tăng rất cao và thường xuyên hắt hơi theo mùa. Chẩn đoán phù hợp nhất?",
+    "options": [
+      "Dị ứng",
+      "Lao",
+      "Uốn ván",
+      "Thương hàn"
+    ],
+    "answer": 0,
+    "explanation": "IgE liên quan chặt chẽ tới phản ứng dị ứng."
+  },
+  {
+    "id": 207,
+    "category": "Immunology",
+    "topic": "Clinical Case",
+    "difficulty": "hard",
+    "question": "Trẻ bú mẹ hoàn toàn nhận được lợi ích miễn dịch nổi bật nhất từ loại kháng thể nào?",
+    "options": [
+      "IgA",
+      "IgD",
+      "IgM",
+      "IgE"
+    ],
+    "answer": 0,
+    "explanation": "IgA tiết trong sữa mẹ bảo vệ đường tiêu hóa và hô hấp."
+  },
+  {
+    "id": 208,
+    "category": "Immunology",
+    "topic": "Clinical Case",
+    "difficulty": "hard",
+    "question": "Một bệnh nhân có đáp ứng mạnh và nhanh khi tái nhiễm cùng loại virus. Điều này nhờ cơ chế nào?",
+    "options": [
+      "Trí nhớ miễn dịch",
+      "Catalase",
+      "Coagulase",
+      "Nha bào"
+    ],
+    "answer": 0,
+    "explanation": "Tế bào nhớ giúp đáp ứng thứ phát mạnh hơn."
+  },
+  {
+    "id": 209,
+    "category": "Immunology",
+    "topic": "Clinical Case",
+    "difficulty": "hard",
+    "question": "Người vừa tiếp xúc virus hôm nay chưa có kháng thể đặc hiệu. Hàng rào nào bảo vệ trước tiên?",
+    "options": [
+      "Miễn dịch bẩm sinh",
+      "IgG",
+      "IgA",
+      "Đáp ứng thứ phát"
+    ],
+    "answer": 0,
+    "explanation": "Miễn dịch bẩm sinh hoạt động ngay lập tức."
+  },
+  {
+    "id": 210,
+    "category": "Immunology",
+    "topic": "Clinical Case",
+    "difficulty": "hard",
+    "question": "Một bệnh nhân có IgG dương tính kéo dài nhiều năm sau khi khỏi bệnh. Điều này phản ánh điều gì?",
+    "options": [
+      "Nhiễm cấp đang diễn ra",
+      "Có trí nhớ miễn dịch",
+      "Thiếu miễn dịch",
+      "Không có đáp ứng miễn dịch"
+    ],
+    "answer": 1,
+    "explanation": "IgG kéo dài phản ánh miễn dịch đã được thiết lập."
+  },
+  {
+    "id": 211,
+    "category": "Parasitology",
+    "topic": "General",
+    "difficulty": "easy",
+    "question": "Ký sinh trùng là gì?",
+    "options": [
+      "Sinh vật sống tự do hoàn toàn",
+      "Sinh vật sống nhờ trên hoặc trong cơ thể sinh vật khác và gây hại ở mức độ nhất định",
+      "Vi sinh vật chỉ sống trong đất",
+      "Tất cả vi khuẩn gây bệnh"
+    ],
+    "answer": 1,
+    "explanation": "Ký sinh trùng sử dụng ký chủ để tồn tại, phát triển hoặc sinh sản."
+  },
+  {
+    "id": 212,
+    "category": "Parasitology",
+    "topic": "General",
+    "difficulty": "easy",
+    "question": "Ký chủ chính là ký chủ mà trong đó ký sinh trùng thực hiện giai đoạn nào?",
+    "options": [
+      "Sinh sản hữu tính",
+      "Chỉ tồn tại tạm thời",
+      "Không sinh sản",
+      "Chỉ gây bệnh"
+    ],
+    "answer": 0,
+    "explanation": "Ký chủ chính là nơi diễn ra giai đoạn trưởng thành hoặc sinh sản hữu tính của ký sinh trùng."
+  },
+  {
+    "id": 213,
+    "category": "Parasitology",
+    "topic": "General",
+    "difficulty": "easy",
+    "question": "Ký chủ trung gian thường là nơi ký sinh trùng thực hiện quá trình nào?",
+    "options": [
+      "Sinh sản hữu tính",
+      "Phát triển ấu trùng hoặc sinh sản vô tính",
+      "Không có chu trình phát triển",
+      "Tạo đáp ứng miễn dịch"
+    ],
+    "answer": 1,
+    "explanation": "Nhiều ký sinh trùng phát triển dạng ấu trùng trong ký chủ trung gian."
+  },
+  {
+    "id": 214,
+    "category": "Parasitology",
+    "topic": "General",
+    "difficulty": "medium",
+    "question": "Nội ký sinh trùng là những ký sinh trùng sống ở đâu?",
+    "options": [
+      "Bề mặt da",
+      "Tóc và móng",
+      "Bên trong cơ thể ký chủ",
+      "Ngoài môi trường"
+    ],
+    "answer": 2,
+    "explanation": "Ví dụ: giun đũa, sán dây, Plasmodium."
+  },
+  {
+    "id": 215,
+    "category": "Parasitology",
+    "topic": "General",
+    "difficulty": "medium",
+    "question": "Ngoại ký sinh trùng là những ký sinh trùng sống chủ yếu ở đâu?",
+    "options": [
+      "Trong máu",
+      "Trong gan",
+      "Bề mặt cơ thể ký chủ",
+      "Trong ruột"
+    ],
+    "answer": 2,
+    "explanation": "Ví dụ điển hình là chấy, rận, ve."
+  },
+  {
+    "id": 216,
+    "category": "Parasitology",
+    "topic": "General",
+    "difficulty": "medium",
+    "question": "Ký chủ lạc chỗ là gì?",
+    "options": [
+      "Ký chủ không mắc bệnh",
+      "Ký sinh trùng cư trú tại vị trí bất thường trong cơ thể",
+      "Ký chủ chính của ký sinh trùng",
+      "Ký chủ trung gian"
+    ],
+    "answer": 1,
+    "explanation": "Một số ký sinh trùng có thể đi nhầm vị trí gây biến chứng nặng."
+  },
+  {
+    "id": 217,
+    "category": "Parasitology",
+    "topic": "General",
+    "difficulty": "hard",
+    "question": "Yếu tố nào góp phần quan trọng nhất trong sự lưu hành của nhiều bệnh ký sinh trùng đường ruột?",
+    "options": [
+      "Vệ sinh môi trường kém",
+      "Thiếu ngủ",
+      "Ăn nhiều đạm",
+      "Nhóm máu"
+    ],
+    "answer": 0,
+    "explanation": "Ô nhiễm phân, thiếu nước sạch và vệ sinh cá nhân kém làm tăng lây truyền."
+  },
+  {
+    "id": 218,
+    "category": "Parasitology",
+    "topic": "Clinical Case",
+    "difficulty": "hard",
+    "question": "Một cộng đồng có tỷ lệ nhiễm giun cao do thường xuyên sử dụng phân tươi để bón rau. Con đường lây truyền quan trọng nhất là gì?",
+    "options": [
+      "Qua muỗi đốt",
+      "Qua hô hấp",
+      "Qua thực phẩm nhiễm trứng hoặc ấu trùng",
+      "Qua truyền máu"
+    ],
+    "answer": 2,
+    "explanation": "Nhiều giun sán lây qua thực phẩm hoặc tay nhiễm trứng ký sinh trùng."
+  },
+  {
+    "id": 219,
+    "category": "Parasitology",
+    "topic": "Clinical Case",
+    "difficulty": "hard",
+    "question": "Một bệnh nhân bị ký sinh trùng từ động vật truyền sang người. Đây là ví dụ của bệnh gì?",
+    "options": [
+      "Bệnh không lây",
+      "Bệnh ký sinh trùng nguồn gốc động vật",
+      "Bệnh di truyền",
+      "Bệnh tự miễn"
+    ],
+    "answer": 1,
+    "explanation": "Nhiều ký sinh trùng là zoonosis, có thể truyền từ động vật sang người."
+  },
+  {
+    "id": 220,
+    "category": "Parasitology",
+    "topic": "Clinical Case",
+    "difficulty": "hard",
+    "question": "Trong phòng chống bệnh ký sinh trùng cộng đồng, biện pháp nào có hiệu quả bền vững nhất?",
+    "options": [
+      "Chỉ điều trị khi có triệu chứng",
+      "Tăng sử dụng kháng sinh",
+      "Cải thiện vệ sinh môi trường, nước sạch và giáo dục sức khỏe",
+      "Cách ly tất cả bệnh nhân"
+    ],
+    "answer": 2,
+    "explanation": "Kiểm soát nguồn lây và thay đổi hành vi là nền tảng phòng chống ký sinh trùng."
+  },
+  {
+    "id": 221,
+    "category": "Parasitology",
+    "topic": "Ascaris",
+    "difficulty": "easy",
+    "question": "Tác nhân gây bệnh giun đũa người là?",
+    "options": [
+      "Ascaris lumbricoides",
+      "Enterobius vermicularis",
+      "Trichuris trichiura",
+      "Necator americanus"
+    ],
+    "answer": 0,
+    "explanation": "Ascaris lumbricoides là loài giun tròn ký sinh phổ biến nhất ở người."
+  },
+  {
+    "id": 222,
+    "category": "Parasitology",
+    "topic": "Ascaris",
+    "difficulty": "easy",
+    "question": "Con đường lây nhiễm giun đũa thường gặp nhất là?",
+    "options": [
+      "Muỗi đốt",
+      "Ăn phải trứng có phôi",
+      "Qua da",
+      "Truyền máu"
+    ],
+    "answer": 1,
+    "explanation": "Người nhiễm bệnh khi nuốt phải trứng đã phát triển thành trứng có phôi."
+  },
+  {
+    "id": 223,
+    "category": "Parasitology",
+    "topic": "Ascaris",
+    "difficulty": "medium",
+    "question": "Sau khi nở trong ruột, ấu trùng giun đũa thường di chuyển đến cơ quan nào trước tiên?",
+    "options": [
+      "Não",
+      "Gan",
+      "Da",
+      "Xương"
+    ],
+    "answer": 1,
+    "explanation": "Ấu trùng theo hệ tĩnh mạch cửa đến gan rồi mới tiếp tục chu trình."
+  },
+  {
+    "id": 224,
+    "category": "Parasitology",
+    "topic": "Ascaris",
+    "difficulty": "medium",
+    "question": "Trong chu trình phát triển của giun đũa, ấu trùng phải đi qua cơ quan nào trước khi trở lại ruột non?",
+    "options": [
+      "Tim và phổi",
+      "Thận",
+      "Lách",
+      "Tuyến giáp"
+    ],
+    "answer": 0,
+    "explanation": "Đây là giai đoạn chu du gan - tim - phổi đặc trưng của giun đũa."
+  },
+  {
+    "id": 225,
+    "category": "Parasitology",
+    "topic": "Ascaris",
+    "difficulty": "medium",
+    "question": "Hội chứng Loeffler liên quan đến giai đoạn nào của giun đũa?",
+    "options": [
+      "Giun trưởng thành trong ruột",
+      "Ấu trùng đi qua phổi",
+      "Trứng trong đất",
+      "Giun vào ống mật"
+    ],
+    "answer": 1,
+    "explanation": "Ấu trùng qua phổi gây phản ứng viêm và tăng bạch cầu ái toan."
+  },
+  {
+    "id": 226,
+    "category": "Parasitology",
+    "topic": "Ascaris",
+    "difficulty": "hard",
+    "question": "Tăng loại bạch cầu nào thường gặp trong nhiễm giun đũa?",
+    "options": [
+      "Trung tính",
+      "Lympho",
+      "Ái toan",
+      "Ái kiềm"
+    ],
+    "answer": 2,
+    "explanation": "Nhiễm giun sán thường làm tăng eosinophil (bạch cầu ái toan)."
+  },
+  {
+    "id": 227,
+    "category": "Parasitology",
+    "topic": "Ascaris Case",
+    "difficulty": "hard",
+    "question": "Trẻ em đau bụng dữ dội, nôn, bụng chướng. Siêu âm thấy nhiều cấu trúc dạng ống trong ruột. Biến chứng nào cần nghĩ đến trước tiên?",
+    "options": [
+      "Viêm dạ dày",
+      "Tắc ruột do giun đũa",
+      "Viêm gan virus",
+      "Sỏi thận"
+    ],
+    "answer": 1,
+    "explanation": "Nhiễm giun đũa số lượng lớn có thể gây tắc ruột."
+  },
+  {
+    "id": 228,
+    "category": "Parasitology",
+    "topic": "Ascaris Case",
+    "difficulty": "hard",
+    "question": "Bệnh nhân đau hạ sườn phải, siêu âm phát hiện giun trong đường mật. Ký sinh trùng nào thường gây biến chứng này?",
+    "options": [
+      "Giun kim",
+      "Giun đũa",
+      "Giun tóc",
+      "Giun móc"
+    ],
+    "answer": 1,
+    "explanation": "Giun đũa trưởng thành có thể chui vào ống mật hoặc ống tụy."
+  },
+  {
+    "id": 229,
+    "category": "Parasitology",
+    "topic": "Ascaris Case",
+    "difficulty": "hard",
+    "question": "Trẻ sống ở vùng vệ sinh kém, ho khan, tăng eosinophil máu ngoại vi và có hình ảnh thâm nhiễm phổi thoáng qua. Nguyên nhân phù hợp nhất là?",
+    "options": [
+      "Lao",
+      "Viêm phổi do vi khuẩn",
+      "Ấu trùng giun đũa di chuyển qua phổi",
+      "Hen phế quản"
+    ],
+    "answer": 2,
+    "explanation": "Đây là bệnh cảnh kinh điển của hội chứng Loeffler."
+  },
+  {
+    "id": 230,
+    "category": "Parasitology",
+    "topic": "Ascaris Case",
+    "difficulty": "hard",
+    "question": "Biện pháp phòng bệnh giun đũa hiệu quả nhất ở cộng đồng là?",
+    "options": [
+      "Đeo khẩu trang",
+      "Uống kháng sinh định kỳ",
+      "Ăn chín uống sôi, rửa tay và cải thiện vệ sinh môi trường",
+      "Tránh muỗi đốt"
+    ],
+    "answer": 2,
+    "explanation": "Ngăn ngừa nuốt phải trứng có phôi là biện pháp kiểm soát quan trọng nhất."
+  },
+  {
+    "id": 231,
+    "category": "Parasitology",
+    "topic": "Hookworm",
+    "difficulty": "easy",
+    "question": "Hai loài giun móc thường gặp gây bệnh ở người là?",
+    "options": [
+      "Ancylostoma duodenale và Necator americanus",
+      "Ascaris lumbricoides và Enterobius vermicularis",
+      "Taenia solium và Taenia saginata",
+      "Plasmodium falciparum và P. vivax"
+    ],
+    "answer": 0,
+    "explanation": "Hai loài giun móc gây bệnh quan trọng ở người là Ancylostoma duodenale và Necator americanus."
+  },
+  {
+    "id": 232,
+    "category": "Parasitology",
+    "topic": "Hookworm",
+    "difficulty": "medium",
+    "question": "Con đường xâm nhập điển hình của ấu trùng giun móc vào cơ thể người là?",
+    "options": [
+      "Qua da bàn chân",
+      "Qua đường hô hấp",
+      "Qua muỗi đốt",
+      "Qua truyền máu"
+    ],
+    "answer": 0,
+    "explanation": "Ấu trùng filariform có khả năng xuyên qua da, đặc biệt khi đi chân đất trên đất nhiễm phân."
+  },
+  {
+    "id": 233,
+    "category": "Parasitology",
+    "topic": "Hookworm",
+    "difficulty": "medium",
+    "question": "Biểu hiện lâm sàng điển hình nhất của nhiễm giun móc kéo dài là?",
+    "options": [
+      "Thiếu máu thiếu sắt",
+      "Vàng da tắc mật",
+      "Viêm màng não",
+      "Xuất huyết phổi"
+    ],
+    "answer": 0,
+    "explanation": "Giun móc hút máu liên tục tại niêm mạc ruột, gây thiếu máu nhược sắc thiếu sắt."
+  },
+  {
+    "id": 234,
+    "category": "Parasitology",
+    "topic": "Hookworm Case",
+    "difficulty": "hard",
+    "question": "Một nông dân thường xuyên đi chân đất, xét nghiệm cho thấy thiếu máu nhược sắc kéo dài và tăng eosinophil máu. Chẩn đoán ký sinh trùng phù hợp nhất là?",
+    "options": [
+      "Giun kim",
+      "Giun tóc",
+      "Giun móc",
+      "Sán dây bò"
+    ],
+    "answer": 2,
+    "explanation": "Đi chân đất là yếu tố nguy cơ kinh điển của nhiễm giun móc."
+  },
+  {
+    "id": 235,
+    "category": "Parasitology",
+    "topic": "Hookworm Case",
+    "difficulty": "hard",
+    "question": "Tổn thương ngứa, ban đỏ tại vị trí ấu trùng giun móc xuyên qua da được gọi là gì?",
+    "options": [
+      "Koplik spots",
+      "Chancre",
+      "Ground itch",
+      "Gumma"
+    ],
+    "answer": 2,
+    "explanation": "Ground itch là tổn thương da đặc trưng tại vị trí ấu trùng giun móc xâm nhập."
+  },
+  {
+    "id": 236,
+    "category": "Parasitology",
+    "topic": "Whipworm",
+    "difficulty": "easy",
+    "question": "Tác nhân gây bệnh giun tóc ở người là?",
+    "options": [
+      "Trichuris trichiura",
+      "Ascaris lumbricoides",
+      "Enterobius vermicularis",
+      "Necator americanus"
+    ],
+    "answer": 0,
+    "explanation": "Trichuris trichiura là giun tóc ký sinh chủ yếu ở manh tràng và đại tràng."
+  },
+  {
+    "id": 237,
+    "category": "Parasitology",
+    "topic": "Whipworm",
+    "difficulty": "medium",
+    "question": "Đặc điểm hình thái điển hình của trứng giun tóc là gì?",
+    "options": [
+      "Hình bầu dục có gai",
+      "Hình cầu có vỏ dày",
+      "Hình quả cau với hai nút nhầy ở hai cực",
+      "Hình tam giác"
+    ],
+    "answer": 2,
+    "explanation": "Trứng giun tóc có hình quả cau (barrel-shaped) với hai nút nhầy đặc trưng."
+  },
+  {
+    "id": 238,
+    "category": "Parasitology",
+    "topic": "Whipworm",
+    "difficulty": "medium",
+    "question": "Giun tóc trưởng thành ký sinh chủ yếu ở vị trí nào?",
+    "options": [
+      "Dạ dày",
+      "Ruột non",
+      "Manh tràng và đại tràng",
+      "Ống mật"
+    ],
+    "answer": 2,
+    "explanation": "Giun tóc thường sống ở manh tràng và đoạn đầu đại tràng."
+  },
+  {
+    "id": 239,
+    "category": "Parasitology",
+    "topic": "Whipworm Case",
+    "difficulty": "hard",
+    "question": "Trẻ em nhiễm giun tóc số lượng lớn kéo dài có thể gặp biến chứng nào đặc trưng?",
+    "options": [
+      "Tràn khí màng phổi",
+      "Sa trực tràng",
+      "Viêm màng não",
+      "Viêm tụy cấp"
+    ],
+    "answer": 1,
+    "explanation": "Sa trực tràng là biến chứng kinh điển trong nhiễm giun tóc nặng."
+  },
+  {
+    "id": 240,
+    "category": "Parasitology",
+    "topic": "Whipworm Case",
+    "difficulty": "hard",
+    "question": "Một trẻ nhỏ sống ở vùng vệ sinh kém bị tiêu chảy kéo dài, thiếu máu nhẹ và xuất hiện sa trực tràng. Ký sinh trùng cần nghĩ đến nhiều nhất là?",
+    "options": [
+      "Giun tóc",
+      "Giun kim",
+      "Giun móc",
+      "Sán dây bò"
+    ],
+    "answer": 0,
+    "explanation": "Bộ ba tiêu chảy kéo dài, sa trực tràng và môi trường vệ sinh kém rất gợi ý nhiễm Trichuris trichiura nặng."
+  },
+  {
+    "id": 241,
+    "category": "Parasitology",
+    "topic": "Pinworm",
+    "difficulty": "easy",
+    "question": "Tác nhân gây bệnh giun kim ở người là?",
+    "options": [
+      "Enterobius vermicularis",
+      "Ascaris lumbricoides",
+      "Trichuris trichiura",
+      "Necator americanus"
+    ],
+    "answer": 0,
+    "explanation": "Enterobius vermicularis là tác nhân gây bệnh giun kim."
+  },
+  {
+    "id": 242,
+    "category": "Parasitology",
+    "topic": "Pinworm",
+    "difficulty": "easy",
+    "question": "Triệu chứng điển hình nhất của nhiễm giun kim là?",
+    "options": [
+      "Đau hạ sườn phải",
+      "Ngứa hậu môn về đêm",
+      "Tiểu máu",
+      "Ho ra máu"
+    ],
+    "answer": 1,
+    "explanation": "Giun cái bò ra vùng hậu môn đẻ trứng vào ban đêm gây ngứa rất đặc trưng."
+  },
+  {
+    "id": 243,
+    "category": "Parasitology",
+    "topic": "Pinworm",
+    "difficulty": "medium",
+    "question": "Phương pháp kinh điển để chẩn đoán giun kim là?",
+    "options": [
+      "Xét nghiệm phân thường quy",
+      "Graham test (Scotch tape test)",
+      "Nhuộm Ziehl-Neelsen",
+      "Mantoux"
+    ],
+    "answer": 1,
+    "explanation": "Trứng giun kim thường được phát hiện bằng phương pháp băng keo trong vùng hậu môn."
+  },
+  {
+    "id": 244,
+    "category": "Parasitology",
+    "topic": "Pinworm",
+    "difficulty": "medium",
+    "question": "Cơ chế nào làm bệnh giun kim dễ tái nhiễm ở trẻ em?",
+    "options": [
+      "Lây qua muỗi",
+      "Tự tái nhiễm qua tay và móng tay",
+      "Lây qua đường máu",
+      "Lây qua động vật nuôi"
+    ],
+    "answer": 1,
+    "explanation": "Trẻ gãi vùng hậu môn, trứng dính vào tay rồi nuốt trở lại gây autoinfection."
+  },
+  {
+    "id": 245,
+    "category": "Parasitology",
+    "topic": "Pinworm Case",
+    "difficulty": "hard",
+    "question": "Một trẻ 7 tuổi ngủ không yên, thường xuyên gãi hậu môn về đêm. Gia đình cho biết tình trạng kéo dài nhiều tuần. Chẩn đoán ký sinh trùng phù hợp nhất là?",
+    "options": [
+      "Giun đũa",
+      "Giun móc",
+      "Giun kim",
+      "Sán lá gan nhỏ"
+    ],
+    "answer": 2,
+    "explanation": "Ngứa hậu môn về đêm là triệu chứng kinh điển nhất của Enterobius vermicularis."
+  },
+  {
+    "id": 246,
+    "category": "Parasitology",
+    "topic": "Flukes",
+    "difficulty": "easy",
+    "question": "Ăn gỏi cá nước ngọt chưa nấu chín làm tăng nguy cơ nhiễm ký sinh trùng nào nhất?",
+    "options": [
+      "Sán lá gan nhỏ (Clonorchis sinensis)",
+      "Giun kim",
+      "Giun tóc",
+      "Giun móc"
+    ],
+    "answer": 0,
+    "explanation": "Cá nước ngọt sống hoặc chưa nấu chín là nguồn lây quan trọng của sán lá gan nhỏ."
+  },
+  {
+    "id": 247,
+    "category": "Parasitology",
+    "topic": "Flukes",
+    "difficulty": "medium",
+    "question": "Ký chủ trung gian thứ nhất của hầu hết các loài sán lá thường là?",
+    "options": [
+      "Cá",
+      "Chó",
+      "Ốc",
+      "Muỗi"
+    ],
+    "answer": 2,
+    "explanation": "Ốc là ký chủ trung gian đầu tiên trong chu trình phát triển của đa số sán lá."
+  },
+  {
+    "id": 248,
+    "category": "Parasitology",
+    "topic": "Flukes",
+    "difficulty": "medium",
+    "question": "Nhiễm sán lá gan lớn (Fasciola hepatica) thường liên quan đến thói quen nào?",
+    "options": [
+      "Ăn thịt bò tái",
+      "Ăn rau thủy sinh sống",
+      "Ăn cá biển sống",
+      "Uống sữa chưa tiệt trùng"
+    ],
+    "answer": 1,
+    "explanation": "Ấu trùng sán lá gan lớn thường bám trên các loại rau thủy sinh."
+  },
+  {
+    "id": 249,
+    "category": "Parasitology",
+    "topic": "Flukes Case",
+    "difficulty": "hard",
+    "question": "Bệnh nhân đau hạ sườn phải kéo dài, siêu âm ghi nhận tổn thương đường mật. Tiền sử ăn gỏi cá nước ngọt nhiều năm. Ký sinh trùng cần nghĩ tới nhất là?",
+    "options": [
+      "Giun kim",
+      "Sán lá gan nhỏ",
+      "Giun tóc",
+      "Giun móc"
+    ],
+    "answer": 1,
+    "explanation": "Ăn gỏi cá là yếu tố nguy cơ kinh điển của nhiễm sán lá gan nhỏ."
+  },
+  {
+    "id": 250,
+    "category": "Parasitology",
+    "topic": "Flukes Case",
+    "difficulty": "hard",
+    "question": "Một người thường xuyên ăn rau ngổ, rau muống nước sống. Sau đó xuất hiện đau gan, tăng bạch cầu ái toan và tổn thương gan trên siêu âm. Chẩn đoán ký sinh trùng phù hợp nhất là?",
+    "options": [
+      "Sán lá gan lớn",
+      "Sán dây bò",
+      "Giun kim",
+      "Giun tóc"
+    ],
+    "answer": 0,
+    "explanation": "Đây là bệnh cảnh rất điển hình của nhiễm Fasciola hepatica."
+  },
+  {
+    "id": 251,
+    "category": "Parasitology",
+    "topic": "Tapeworm",
+    "difficulty": "easy",
+    "question": "Loài sán dây nào thường liên quan đến thịt lợn chưa nấu chín?",
+    "options": [
+      "Taenia solium",
+      "Taenia saginata",
+      "Fasciola hepatica",
+      "Clonorchis sinensis"
+    ],
+    "answer": 0,
+    "explanation": "Taenia solium là sán dây lợn, lây qua thịt lợn có nang ấu trùng chưa được nấu chín."
+  },
+  {
+    "id": 252,
+    "category": "Parasitology",
+    "topic": "Tapeworm",
+    "difficulty": "easy",
+    "question": "Loài sán dây nào thường liên quan đến thịt bò tái hoặc chưa nấu chín?",
+    "options": [
+      "Taenia solium",
+      "Taenia saginata",
+      "Enterobius vermicularis",
+      "Ascaris lumbricoides"
+    ],
+    "answer": 1,
+    "explanation": "Taenia saginata là sán dây bò."
+  },
+  {
+    "id": 253,
+    "category": "Parasitology",
+    "topic": "Tapeworm",
+    "difficulty": "medium",
+    "question": "Biến chứng nguy hiểm nhất của Taenia solium là gì?",
+    "options": [
+      "Thiếu máu thiếu sắt",
+      "Tắc ruột đơn thuần",
+      "Ấu trùng tạo nang ở mô và não",
+      "Viêm phổi"
+    ],
+    "answer": 2,
+    "explanation": "Taenia solium có thể gây bệnh ấu trùng sán lợn (cysticercosis), đặc biệt nguy hiểm khi ở não."
+  },
+  {
+    "id": 254,
+    "category": "Parasitology",
+    "topic": "Tapeworm Case",
+    "difficulty": "hard",
+    "question": "Một bệnh nhân xuất hiện co giật nhiều lần, chụp MRI phát hiện nhiều nang nhỏ trong nhu mô não. Tiền sử ăn thịt lợn chưa nấu kỹ. Ký sinh trùng nào cần nghĩ đến nhất?",
+    "options": [
+      "Taenia solium",
+      "Taenia saginata",
+      "Giun kim",
+      "Giun móc"
+    ],
+    "answer": 0,
+    "explanation": "Neurocysticercosis do ấu trùng Taenia solium là nguyên nhân thường gặp của co giật tại vùng lưu hành bệnh."
+  },
+  {
+    "id": 255,
+    "category": "Parasitology",
+    "topic": "Tapeworm Case",
+    "difficulty": "hard",
+    "question": "Một người khỏe mạnh phát hiện các đốt sán tự bò ra theo phân nhưng không có triệu chứng thần kinh. Tiền sử thường xuyên ăn bò tái. Tác nhân phù hợp nhất là?",
+    "options": [
+      "Taenia saginata",
+      "Taenia solium",
+      "Fasciola hepatica",
+      "Enterobius vermicularis"
+    ],
+    "answer": 0,
+    "explanation": "Sán dây bò thường gây nhiễm ở ruột với biểu hiện nhìn thấy đốt sán theo phân."
+  },
+  {
+    "id": 256,
+    "category": "Parasitology",
+    "topic": "Malaria",
+    "difficulty": "easy",
+    "question": "Tác nhân gây bệnh sốt rét ở người thuộc chi nào?",
+    "options": [
+      "Giardia",
+      "Entamoeba",
+      "Plasmodium",
+      "Trichomonas"
+    ],
+    "answer": 2,
+    "explanation": "Bệnh sốt rét do các loài Plasmodium gây ra."
+  },
+  {
+    "id": 257,
+    "category": "Parasitology",
+    "topic": "Malaria",
+    "difficulty": "easy",
+    "question": "Vector truyền bệnh sốt rét chủ yếu là?",
+    "options": [
+      "Muỗi Aedes",
+      "Muỗi Culex",
+      "Muỗi Anopheles cái",
+      "Ruồi cát"
+    ],
+    "answer": 2,
+    "explanation": "Muỗi Anopheles cái là trung gian truyền bệnh sốt rét."
+  },
+  {
+    "id": 258,
+    "category": "Parasitology",
+    "topic": "Malaria",
+    "difficulty": "medium",
+    "question": "Loài Plasmodium nào thường liên quan đến sốt rét ác tính và tỷ lệ tử vong cao nhất?",
+    "options": [
+      "P. vivax",
+      "P. malariae",
+      "P. ovale",
+      "P. falciparum"
+    ],
+    "answer": 3,
+    "explanation": "P. falciparum có thể gây sốt rét ác tính với nhiều biến chứng nặng."
+  },
+  {
+    "id": 259,
+    "category": "Parasitology",
+    "topic": "Malaria",
+    "difficulty": "hard",
+    "question": "Loài Plasmodium nào có thể tái phát nhiều tháng hoặc nhiều năm sau nhiễm do tồn tại thể ngủ trong gan (hypnozoite)?",
+    "options": [
+      "P. falciparum",
+      "P. vivax",
+      "P. knowlesi",
+      "Tất cả các loài"
+    ],
+    "answer": 1,
+    "explanation": "P. vivax (và P. ovale) có thể tạo hypnozoite tồn tại trong gan gây tái phát."
+  },
+  {
+    "id": 260,
+    "category": "Parasitology",
+    "topic": "Malaria Case",
+    "difficulty": "hard",
+    "question": "Một người vừa đi rừng về xuất hiện các cơn rét run dữ dội, sau đó sốt cao rồi vã mồ hôi. Lam máu ngoại vi phát hiện Plasmodium. Chẩn đoán phù hợp nhất là?",
+    "options": [
+      "Sốt xuất huyết Dengue",
+      "Viêm não Nhật Bản",
+      "Sốt rét",
+      "Thương hàn"
+    ],
+    "answer": 2,
+    "explanation": "Cơn rét run → sốt cao → vã mồ hôi theo chu kỳ là biểu hiện kinh điển của sốt rét."
+  }
+]
