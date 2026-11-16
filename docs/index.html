@@ -1,10 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ôn tập Vi sinh</title>
+<script>
+window.MathJax={
+ tex:{inlineMath:[['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},
+ options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"
+ onload="window.renderPendingMath&&window.renderPendingMath()"
+ onerror="window.mathJaxLoadFailed&&window.mathJaxLoadFailed()"></script>
 <style>
 *{box-sizing:border-box}
 body{font-family:Arial,sans-serif;max-width:1100px;margin:auto;padding:clamp(12px,3vw,24px);background:#f5f7fb;color:#172033}
@@ -31,10 +39,15 @@ button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid 
 .action-buttons{grid-column:1/-1}
 #sourceMessage{grid-column:1/-1;min-height:1.25em;color:#475569;overflow-wrap:anywhere}
 #submitArea{text-align:right;margin:16px 0}
-.answer-option label{display:flex;align-items:flex-start;gap:10px;min-height:44px;padding:10px;border-radius:8px;cursor:pointer;line-height:1.45}
+.answer-option,.answer-option label,.answer-content{min-width:0}
+.answer-option label{display:flex;align-items:flex-start;gap:10px;width:100%;min-height:44px;padding:10px;border-radius:8px;cursor:pointer;line-height:1.45}
 .answer-option label:hover{background:#f8fafc}
 .answer-option input{flex:0 0 auto;width:20px;height:20px;margin:1px 0 0;accent-color:#2563eb}
+.answer-content{display:block;flex:1 1 0;max-width:100%;overflow-wrap:anywhere}
+.answer-content mjx-container{max-width:100%;vertical-align:middle}
+mjx-container[display="true"]{display:block;text-align:left}
 .progress{font-weight:bold;color:#1d4ed8}
+mjx-container{max-width:100%;overflow-x:auto;overflow-y:hidden}
 @media(max-width:700px){
  .filter-controls{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
@@ -98,11 +111,14 @@ const fallbackServerSubjects=[
  {name:'Vi sinh - 25 câu 1',file:'25cau1.json'},
  {name:'Vi sinh - 25 câu 2',file:'25cau2.json'},
  {name:'Vi sinh - 25 câu 3',file:'25cau3.json'},
- {name:'Vi sinh - 25 câu 4',file:'25cau4.json'}
+ {name:'Vi sinh - 25 câu 4',file:'25cau4.json'},
+ {name:'Xác suất thống kê',file:'XSTK.json'}
 ];
 let serverSubjects=[...fallbackServerSubjects],serverDiscoveryError='';
 let allQuestions=[],questions=[];
 let isWrongQuestionsPractice=false;
+const pendingMathElements=new Set();
+let mathTypesetQueue=Promise.resolve();
 const localKey='questionSets';
 const wrongQuestionsKey='wrongQuestions';
 const wrongQuestionsSubject='__wrong_questions__';
@@ -160,6 +176,28 @@ function getWrongQuestions(){
 function questionKey(question){
  return JSON.stringify([question.category||'',question.question,question.options,question.answer]);
 }
+function reportMathError(error){
+ console.error('MathJax rendering failed:',error);
+ document.getElementById('sourceMessage').textContent='Không thể hiển thị một số công thức toán học.';
+}
+function renderMath(element){
+ if(window.MathJax&&typeof window.MathJax.typesetPromise==='function'){
+  mathTypesetQueue=mathTypesetQueue
+   .then(()=>element.isConnected?window.MathJax.typesetPromise([element]):undefined)
+   .catch(reportMathError);
+ }else pendingMathElements.add(element);
+}
+window.renderPendingMath=function(){
+ if(!window.MathJax||typeof window.MathJax.typesetPromise!=='function')return;
+ const elements=[...pendingMathElements].filter(element=>
+  element.isConnected&&!([...pendingMathElements].some(other=>other!==element&&other.contains(element)))
+ );
+ pendingMathElements.clear();
+ elements.forEach(renderMath);
+};
+window.mathJaxLoadFailed=function(){
+ document.getElementById('sourceMessage').textContent='Không thể tải MathJax. Công thức sẽ hiển thị dưới dạng văn bản.';
+};
 function saveWrongQuestions(questions){
  const stored=getWrongQuestions();
  const known=new Set(stored.map(questionKey));
@@ -263,7 +301,11 @@ function isQuestion(q){
   (q.explanation===undefined||typeof q.explanation==='string');
 }
 function escapeHtml(value){
- return String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+ return String(value).split(/(<br\s*\/?>)/gi).map(part=>
+  /^<br\s*\/?>$/i.test(part)
+   ?'<br>'
+   :part.replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]))
+ ).join('');
 }
 function updateCategories(){
  const sel=document.getElementById('category');
@@ -304,10 +346,16 @@ function updatePageTitle(){
   Virology:'🧬'
  };
  const categories=[...new Set(allQuestions.map(q=>q.category).filter(Boolean))];
- const title=categories.map(category=>translations[category]||category).join(', ');
- const localizedIcons={'Đạo đức':'⚖️','Xác suất':'🎲'};
+ const selectedSubject=document.getElementById('subject').selectedOptions[0]?.textContent||'';
+ const subjectNames={'XSTK':'Xác suất thống kê'};
+ const title=categories.length
+  ?categories.map(category=>translations[category]||category).join(', ')
+  :subjectNames[selectedSubject]||selectedSubject;
+ const localizedIcons={'Đạo đức':'⚖️','Xác suất':'🎲','Xác suất thống kê':'🎲'};
  const firstCategory=categories[0];
- const icon=firstCategory?(icons[firstCategory]||localizedIcons[firstCategory]||'📚'):'🦠';
+ const icon=firstCategory
+  ?icons[firstCategory]||localizedIcons[firstCategory]||'📚'
+  :selectedSubject==='XSTK'?'🎲':localizedIcons[title]||'🦠';
  document.getElementById('pageTitle').textContent=`${icon} Ôn tập${title?' '+title:''}`;
 }
 async function importQuestions(event){
@@ -348,16 +396,20 @@ function startQuiz(){
  const mode=document.querySelector('input[name=mode]:checked').value;
  isWrongQuestionsPractice=document.getElementById('source').value==='local'&&
   document.getElementById('subject').value===wrongQuestionsSubject;
- const root=document.getElementById('quiz'); root.innerHTML='';
- document.getElementById('result').innerHTML='';
+ const root=document.getElementById('quiz');
+ const result=document.getElementById('result');
+ window.MathJax?.typesetClear?.([root,result]);
+ root.innerHTML='';
+ result.innerHTML='';
  questions.forEach((q,i)=>{
  let html=`<div class='card' id='card${i}'><div class='progress'>Câu ${i+1}</div><p><b>${escapeHtml(q.question)}</b></p>`;
  q.options.forEach((o,idx)=>{
- html+=`<div class='answer-option'><label><input type='radio' name='q${i}' value='${idx}' onchange='answerQuestion(${i},${idx})'> ${escapeHtml(o)}</label></div>`;
+ html+=`<div class='answer-option'><label><input type='radio' name='q${i}' value='${idx}' onchange='answerQuestion(${i},${idx})'><span class='answer-content'>${escapeHtml(o)}</span></label></div>`;
  });
  html+=`<div id='feedback${i}'></div></div>`;
  root.innerHTML+=html;
  });
+ renderMath(root);
  window.currentMode=mode;
  document.getElementById('submitArea').classList.toggle('hidden',mode!=='exam');
 }
@@ -366,9 +418,11 @@ function answerQuestion(i,val){
  const q=questions[i];
  const fb=document.getElementById('feedback'+i);
  const card=document.getElementById('card'+i);
+ window.MathJax?.typesetClear?.([fb]);
  if(val===q.answer){
  card.classList.add('correct');
  fb.innerHTML=`✅ Đúng<br><small>${escapeHtml(q.explanation||'')}</small>`;
+ renderMath(fb);
  if(isWrongQuestionsPractice){
   try{removeWrongQuestions([q]);}
   catch(error){document.getElementById('sourceMessage').textContent=error.message||'Không thể cập nhật danh sách câu sai.';}
@@ -376,6 +430,7 @@ function answerQuestion(i,val){
  }else{
  card.classList.add('wrong');
  fb.innerHTML=`❌ Sai<br>Đáp án đúng: <b>${escapeHtml(q.options[q.answer])}</b><br><small>${escapeHtml(q.explanation||'')}</small>`;
+ renderMath(fb);
  try{saveWrongQuestions([q]);}
  catch(error){document.getElementById('sourceMessage').textContent=error.message||'Không thể lưu câu trả lời sai.';}
  }
@@ -396,7 +451,10 @@ function submitQuiz(){
  catch(error){document.getElementById('sourceMessage').textContent=error.message||'Không thể lưu câu trả lời sai.';}
  try{removeWrongQuestions(correctWrongQuestions);}
  catch(error){document.getElementById('sourceMessage').textContent=error.message||'Không thể cập nhật danh sách câu sai.';}
- document.getElementById('result').innerHTML=`<div class='card'><h2>Điểm: ${score}/${questions.length}</h2><p>${Math.round(score*100/questions.length)}%</p></div>`+review;
+ const result=document.getElementById('result');
+ window.MathJax?.typesetClear?.([result]);
+ result.innerHTML=`<div class='card'><h2>Điểm: ${score}/${questions.length}</h2><p>${Math.round(score*100/questions.length)}%</p></div>`+review;
+ renderMath(result);
  window.scrollTo(0,document.body.scrollHeight);
 }
 </script>
