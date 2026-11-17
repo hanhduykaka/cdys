@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ôn tập Vi sinh</title>
+<title>Ôn tập Trắc Nghiệm CDYD</title>
 <script>
 window.MathJax={
  tex:{inlineMath:[['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},
@@ -24,7 +24,7 @@ h1{font-size:clamp(1.5rem,4vw,2rem);line-height:1.25;margin:0 0 18px;overflow-wr
 .mode-options label{min-height:44px;display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border:1px solid #dbe2ea;border-radius:8px}
 .source-controls,.filter-controls{display:grid;gap:12px;align-items:end}
 .source-controls{grid-template-columns:repeat(2,minmax(0,1fr))}
-.filter-controls{grid-template-columns:repeat(4,minmax(0,1fr))}
+.filter-controls{grid-template-columns:repeat(5,minmax(0,1fr))}
 .field{display:flex;flex-direction:column;gap:6px;min-width:0}
 .field label{font-size:.92rem;font-weight:600;color:#374151}
 select,input[type=number]{width:100%;min-width:0;min-height:44px;padding:9px 11px;border:1px solid #cbd5e1;border-radius:8px;background:#fff;color:inherit;font:inherit}
@@ -39,6 +39,8 @@ button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid 
 .action-buttons{grid-column:1/-1}
 #sourceMessage{grid-column:1/-1;min-height:1.25em;color:#475569;overflow-wrap:anywhere}
 #submitArea{text-align:right;margin:16px 0}
+#examTimer{position:sticky;top:8px;z-index:5;text-align:center;font-size:1.15rem;font-weight:700;color:#1e3a8a}
+#examTimer.warning{color:#991b1b;background:#fee2e2;border:1px solid #fecaca}
 .answer-option,.answer-option label,.answer-content{min-width:0}
 .answer-option label{display:flex;align-items:flex-start;gap:10px;width:100%;min-height:44px;padding:10px;border-radius:8px;cursor:pointer;line-height:1.45}
 .answer-option label:hover{background:#f8fafc}
@@ -47,18 +49,22 @@ button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid 
 .answer-content mjx-container{max-width:100%;vertical-align:middle}
 mjx-container[display="true"]{display:block;text-align:left}
 .progress{font-weight:bold;color:#1d4ed8}
+#quiz .card:first-child{scroll-margin-top:12px}
 mjx-container{max-width:100%;overflow-x:auto;overflow-y:hidden}
 @media(max-width:700px){
  .filter-controls{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:480px){
  body{padding:12px}
- .source-controls,.filter-controls{grid-template-columns:1fr}
+ .source-controls{grid-template-columns:1fr}
+ .filter-controls{grid-template-columns:repeat(2,minmax(0,1fr))}
  .action-buttons{display:grid;grid-template-columns:1fr}
  .action-buttons button{width:100%}
  .mode-options{display:grid;grid-template-columns:1fr 1fr}
  .mode-options label{justify-content:center;padding:8px 6px}
- #submitArea button{width:100%}
+ body.exam-mode{padding-bottom:calc(82px + env(safe-area-inset-bottom))}
+ #submitArea{position:fixed;z-index:10;right:0;bottom:0;left:0;margin:0;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid #dbe2ea;box-shadow:0 -4px 16px rgba(15,23,42,.08);backdrop-filter:blur(8px)}
+ #submitArea button{width:100%;max-width:1100px}
 }
 </style>
 </head>
@@ -67,8 +73,8 @@ mjx-container{max-width:100%;overflow-x:auto;overflow-y:hidden}
 <div class='card settings-card'>
 <h3>Chế độ</h3>
 <div class='mode-options'>
-<label><input type='radio' name='mode' value='study' checked> Ôn tập</label>
-<label><input type='radio' name='mode' value='exam'> Thi thử</label>
+<label><input type='radio' name='mode' value='study' checked onchange='updateModeSettings()'> Ôn tập</label>
+<label><input type='radio' name='mode' value='exam' onchange='updateModeSettings()'> Thi thử</label>
 </div>
 <div class='source-controls'>
 <div class='field'><label for='source'>Nguồn câu hỏi</label>
@@ -97,9 +103,12 @@ mjx-container{max-width:100%;overflow-x:auto;overflow-y:hidden}
 </select></div>
 <div class='field'><label for='count'>Số câu</label>
 <input id='count' type='number' value='50' min='1' max='200'></div>
+<div id='examTimerSetting' class='field hidden'><label for='minutesPerQuestion'>Phút mỗi câu (thi thử)</label>
+<input id='minutesPerQuestion' type='number' value='2' min='1' max='60'></div>
 <button onclick='startQuiz()'>Bắt đầu</button>
 </div>
 </div>
+<div id='examTimer' class='card hidden' role='timer' aria-live='off'></div>
 <div id='quiz'></div>
 <div id='submitArea' class='hidden'><button onclick='submitQuiz()'>Nộp bài</button></div>
 <div id='result'></div>
@@ -117,6 +126,7 @@ const fallbackServerSubjects=[
 let serverSubjects=[...fallbackServerSubjects],serverDiscoveryError='';
 let allQuestions=[],questions=[];
 let isWrongQuestionsPractice=false;
+let examTimerInterval=null,examDeadline=0,examSubmitted=false;
 const pendingMathElements=new Set();
 let mathTypesetQueue=Promise.resolve();
 const localKey='questionSets';
@@ -136,6 +146,19 @@ async function githubDirectory(owner,repo,directory=''){
  if(!response.ok)throw new Error(`GitHub returned ${response.status}`);
  return response.json();
 }
+function setServerQuestionFiles(files){
+ serverSubjects=files
+  .filter(file=>file.toLowerCase().endsWith('.json'))
+  .map(file=>{
+   const base=file.replace(/\.json$/i,'');
+   return {name:base.toLowerCase()==='xstk'?'Xác suất thống kê':base.replace(/[_-]+/g,' '),file};
+  })
+  .sort((a,b)=>{
+   if(a.file.toLowerCase()==='questions.json')return -1;
+   if(b.file.toLowerCase()==='questions.json')return 1;
+   return a.name.localeCompare(b.name,undefined,{numeric:true});
+  });
+}
 async function discoverGithubQuestions(){
  const repository=githubPagesRepository();
  if(!repository)return;
@@ -146,23 +169,34 @@ async function discoverGithubQuestions(){
    const docsEntries=await githubDirectory(repository.owner,repository.repo,'docs');
    if(docsEntries.some(item=>item.name==='index.html'))entries=docsEntries;
   }
-  serverSubjects=entries
-   .filter(item=>item.type==='file'&&item.name.toLowerCase().endsWith('.json'))
-   .map(item=>({name:item.name.replace(/\.json$/i,'').replace(/[_-]+/g,' '),file:item.name}))
-   .sort((a,b)=>{
-    if(a.file.toLowerCase()==='questions.json')return -1;
-    if(b.file.toLowerCase()==='questions.json')return 1;
-    return a.name.localeCompare(b.name,undefined,{numeric:true});
-   });
+  setServerQuestionFiles(entries.filter(item=>item.type==='file').map(item=>item.name));
   if(!serverSubjects.length)serverDiscoveryError='Không tìm thấy tệp câu hỏi JSON trong kho GitHub.';
  }catch(error){
   serverSubjects=[];
   serverDiscoveryError=`Không thể tải danh sách câu hỏi từ GitHub: ${error.message}`;
  }
 }
+async function discoverLocalQuestions(){
+ try{
+  const response=await fetch('/api/question-files',{cache:'no-store'});
+  if(!response.ok)throw new Error(`Local server returned ${response.status}`);
+  const files=await response.json();
+  if(!Array.isArray(files)||!files.every(file=>typeof file==='string'))
+   throw new Error('Local server returned an invalid question-file list');
+  setServerQuestionFiles(files);
+  return true;
+ }catch(error){
+  serverSubjects=[...fallbackServerSubjects];
+  serverDiscoveryError='Để tự động tìm tất cả tệp JSON trên localhost, hãy chạy python serve.py thay cho python -m http.server.';
+  return false;
+ }
+}
 async function initializeSubjects(){
- await discoverGithubQuestions();
- updateSubjects();
+ if(githubPagesRepository())await discoverGithubQuestions();
+ else if(['localhost','127.0.0.1'].includes(location.hostname))await discoverLocalQuestions();
+ await updateSubjects();
+ if(serverDiscoveryError&&['localhost','127.0.0.1'].includes(location.hostname))
+  document.getElementById('sourceMessage').textContent=serverDiscoveryError;
 }
 function getLocalSets(){
  try{return JSON.parse(localStorage.getItem(localKey)||'{}');}
@@ -274,7 +308,7 @@ function updateSubjects(selected){
   option.value=item.id; option.textContent=item.name; subject.appendChild(option);
  });
  if(selected&&entries.some(item=>item.id===selected)) subject.value=selected;
- loadSubject();
+ return loadSubject();
 }
 async function loadSubject(){
  const source=document.getElementById('source').value;
@@ -322,6 +356,40 @@ function updateCategories(){
  difficulty.replaceChildren(new Option('Tất cả','ALL'));
  difficulties.forEach(value=>difficulty.add(new Option(labels[value]||value,value)));
  if(difficulties.includes(selectedDifficulty))difficulty.value=selectedDifficulty;
+}
+function updateModeSettings(){
+ const isExam=document.querySelector('input[name=mode]:checked')?.value==='exam';
+ document.getElementById('examTimerSetting').classList.toggle('hidden',!isExam);
+}
+function stopExamTimer(){
+ if(examTimerInterval)clearInterval(examTimerInterval);
+ examTimerInterval=null;
+ examDeadline=0;
+ const timer=document.getElementById('examTimer');
+ timer.classList.add('hidden');
+ timer.classList.remove('warning');
+}
+function startExamTimer(durationSeconds){
+ const timer=document.getElementById('examTimer');
+ examDeadline=Date.now()+durationSeconds*1000;
+ timer.classList.remove('hidden');
+ updateExamTimer();
+ if(!examSubmitted)examTimerInterval=setInterval(updateExamTimer,1000);
+}
+function updateExamTimer(){
+ const remaining=Math.max(0,Math.ceil((examDeadline-Date.now())/1000));
+ const minutes=String(Math.floor(remaining/60)).padStart(2,'0');
+ const seconds=String(remaining%60).padStart(2,'0');
+ const timer=document.getElementById('examTimer');
+ timer.classList.toggle('warning',remaining<=60);
+ timer.textContent=remaining<=60
+  ?`⚠️ Còn 1 phút hoặc ít hơn — ${minutes}:${seconds}`
+  :`⏱️ Thời gian còn lại — ${minutes}:${seconds}`;
+ if(remaining===0){
+  if(examTimerInterval)clearInterval(examTimerInterval);
+  examTimerInterval=null;
+  submitQuiz(true);
+ }
 }
 function updatePageTitle(){
  const translations={
@@ -386,6 +454,8 @@ updateWrongPracticeButton();
 initializeSubjects();
 function shuffle(a){return [...a].sort(()=>Math.random()-0.5)}
 function startQuiz(){
+ stopExamTimer();
+ examSubmitted=false;
  const cat=document.getElementById('category').value;
  const difficulty=document.getElementById('difficulty').value;
  const count=parseInt(document.getElementById('count').value)||50;
@@ -395,13 +465,19 @@ function startQuiz(){
  );
  questions=shuffle(pool).slice(0,Math.min(count,pool.length));
  const mode=document.querySelector('input[name=mode]:checked').value;
- isWrongQuestionsPractice=document.getElementById('source').value==='local'&&
-  document.getElementById('subject').value===wrongQuestionsSubject;
  const root=document.getElementById('quiz');
  const result=document.getElementById('result');
  window.MathJax?.typesetClear?.([root,result]);
  root.innerHTML='';
  result.innerHTML='';
+ if(!questions.length){
+  document.body.classList.remove('exam-mode');
+  document.getElementById('submitArea').classList.add('hidden');
+  document.getElementById('sourceMessage').textContent='Không có câu hỏi phù hợp với bộ lọc đã chọn.';
+  return;
+ }
+ isWrongQuestionsPractice=document.getElementById('source').value==='local'&&
+  document.getElementById('subject').value===wrongQuestionsSubject;
  questions.forEach((q,i)=>{
  let html=`<div class='card' id='card${i}'><div class='progress'>Câu ${i+1}</div><p><b>${escapeHtml(q.question)}</b></p>`;
  q.options.forEach((o,idx)=>{
@@ -412,7 +488,16 @@ function startQuiz(){
  });
  renderMath(root);
  window.currentMode=mode;
+ document.body.classList.toggle('exam-mode',mode==='exam');
  document.getElementById('submitArea').classList.toggle('hidden',mode!=='exam');
+ if(mode==='exam'){
+  const minutesInput=document.getElementById('minutesPerQuestion');
+  const configuredMinutes=Number.parseInt(minutesInput.value,10);
+  const minutes=Number.isFinite(configuredMinutes)?Math.max(1,Math.min(60,configuredMinutes)):2;
+  minutesInput.value=String(minutes);
+  startExamTimer(questions.length*minutes*60);
+ }
+ root.firstElementChild?.scrollIntoView({behavior:'smooth',block:'start'});
 }
 function answerQuestion(i,val){
  if(currentMode!=='study') return;
@@ -436,7 +521,17 @@ function answerQuestion(i,val){
  catch(error){document.getElementById('sourceMessage').textContent=error.message||'Không thể lưu câu trả lời sai.';}
  }
  }
-function submitQuiz(){
+function submitQuiz(timeExpired=false){
+ if(window.currentMode!=='exam'||examSubmitted)return;
+ examSubmitted=true;
+ if(examTimerInterval)clearInterval(examTimerInterval);
+ examTimerInterval=null;
+ const timer=document.getElementById('examTimer');
+ timer.classList.remove('hidden');
+ timer.classList.toggle('warning',timeExpired);
+ timer.textContent=timeExpired?'⏰ Hết giờ — bài thi đã được nộp tự động.':'✅ Bài thi đã được nộp.';
+ document.getElementById('submitArea').classList.add('hidden');
+ document.body.classList.remove('exam-mode');
  let score=0,review='',wrongQuestions=[],correctWrongQuestions=[];
  questions.forEach((q,i)=>{
  const checked=document.querySelector(`input[name=q${i}]:checked`);
