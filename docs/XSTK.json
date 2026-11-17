@@ -238,6 +238,345 @@
     ],
     "answer": 0,
     "explanation": "$$n=C_{10}^{3}$$<br>$$m=C_{6}^{2}.C_{4}^{1}$$<br>$$P(A)=\\frac{C_{6}^{2}.C_{4}^{1}}{C_{10}^{3}}$$"
+  },
+
+  {
+    "id": "CN_01",
+    "topic": "Cong xac suat",
+    "question": "Cho P(A)=0.4; P(B)=0.3; A và B xung khắc. Tính P(A+B).",
+    "options": [
+      "$$P(A+B)=P(A)+P(B)=0.4+0.3=0.7$$",
+      "$$P(A+B)=P(A).P(B)=0.12$$",
+      "$$P(A+B)=0.4+0.3-0.12=0.58$$",
+      "$$P(A+B)=1$$"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "CN_02",
+    "topic": "Cong xac suat",
+    "question": "Cho P(A)=0.6; P(B)=0.5; P(A.B)=0.2. Tính P(A+B).",
+    "options": [
+      "$$P(A+B)=0.6+0.5=1.1$$",
+      "$$P(A+B)=0.6+0.5-0.2=0.9$$",
+      "$$P(A+B)=0.6\\times0.5=0.3$$",
+      "$$P(A+B)=0.2$$"
+    ],
+    "answer": 1
+  },
+
+  {
+    "id": "CN_03",
+    "topic": "Nhan xac suat",
+    "question": "Cho P(A)=0.5; P(B)=0.4. Biết A và B độc lập. Tính P(A.B).",
+    "options": [
+      "$$P(A.B)=0.5+0.4=0.9$$",
+      "$$P(A.B)=0.5\\times0.4=0.2$$",
+      "$$P(A.B)=0.5-0.4=0.1$$",
+      "$$P(A.B)=1$$"
+    ],
+    "answer": 1
+  },
+
+  {
+    "id": "CN_04",
+    "topic": "Nhan xac suat",
+    "question": "Cho P(A)=0.7; P(B/A)=0.2. Tính P(A.B).",
+    "options": [
+      "$$P(A.B)=P(A)P(B/A)=0.7\\times0.2=0.14$$",
+      "$$P(A.B)=0.7+0.2=0.9$$",
+      "$$P(A.B)=0.7-0.2=0.5$$",
+      "$$P(A.B)=0.2/0.7$$"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "CN_05",
+    "topic": "Cong xac suat",
+    "question": "Gieo một xúc xắc. Tính xác suất xuất hiện số chẵn hoặc số lớn hơn 4.",
+    "options": [
+      "$$P(A+B)=\\frac{3}{6}+\\frac{2}{6}=\\frac{5}{6}$$",
+      "$$P(A+B)=\\frac{3}{6}+\\frac{2}{6}-\\frac{1}{6}=\\frac{4}{6}$$",
+      "$$P(A+B)=\\frac{3}{6}.\\frac{2}{6}=\\frac{1}{6}$$",
+      "$$P(A+B)=\\frac{2}{6}$$"
+    ],
+    "answer": 1
+  },
+
+  {
+    "id": "CN_06",
+    "topic": "Nhan xac suat",
+    "question": "Rút liên tiếp 2 lá bài từ bộ 52 lá không hoàn lại. Tính xác suất cả hai lá đều là Át.",
+    "options": [
+      "$$P(A.B)=\\frac{4}{52}.\\frac{3}{51}$$",
+      "$$P(A.B)=\\frac{4}{52}+\\frac{3}{51}$$",
+      "$$P(A.B)=\\frac{4}{52}.\\frac{4}{52}$$",
+      "$$P(A.B)=\\frac{1}{52}$$"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "CN_07",
+    "topic": "Cong xac suat",
+    "question": "Cho P(A)=0.8; P(B)=0.5; P(A.B)=0.4. Tính P(A+B).",
+    "options": [
+      "$$0.8+0.5-0.4=0.9$$",
+      "$$0.8+0.5=1.3$$",
+      "$$0.8\\times0.5=0.4$$",
+      "$$0.4$$"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "CN_08",
+    "topic": "Nhan xac suat",
+    "question": "Một hộp có 5 bi đỏ, 3 bi xanh. Rút liên tiếp 2 bi không hoàn lại. Tính xác suất cả hai bi đều đỏ.",
+    "options": [
+      "$$P(A.B)=\\frac{5}{8}.\\frac{4}{7}$$",
+      "$$P(A.B)=\\frac{5}{8}+\\frac{4}{7}$$",
+      "$$P(A.B)=\\frac{5}{8}.\\frac{5}{8}$$",
+      "$$P(A.B)=\\frac{4}{7}$$"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "BAYES_01",
+    "topic": "Bayes",
+    "question": "Công thức Bayes được sử dụng để tính:",
+    "options": [
+      "$$P(A/B)=\\frac{P(A)P(B/A)}{P(B)}$$",
+      "$$P(A.B)=P(A)P(B)$$",
+      "$$P(A+B)=P(A)+P(B)$$",
+      "$$P(A)=\\frac{m}{n}$$"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "BAYES_02",
+    "topic": "Bayes",
+    "question": "Một bệnh có tỷ lệ mắc 1%. Xét nghiệm có độ nhạy 90%. Công thức cần dùng để tính xác suất thực sự mắc bệnh khi xét nghiệm dương tính là:",
+    "options": [
+      "$$P(B/A)=\\frac{P(B)}{P(A)}$$",
+      "$$P(A/B)=\\frac{P(A)P(B/A)}{P(B)}$$",
+      "$$P(A.B)=P(A)P(B)$$",
+      "$$P(B)=P(A)+P(B)$$"
+    ],
+    "answer": 1
+  },
+
+  {
+    "id": "BAYES_03",
+    "topic": "Bayes",
+    "question": "Trong công thức Bayes, mẫu số P(B) được tính bằng:",
+    "options": [
+      "$$P(B)=P(A)P(B/A)+P(\\bar A)P(B/\\bar A)$$",
+      "$$P(B)=P(A)+P(B)$$",
+      "$$P(B)=P(A)P(B)$$",
+      "$$P(B)=1-P(A)$$"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "BAYES_04",
+    "topic": "Bayes",
+    "question": "Nhà máy I sản xuất 60% sản phẩm, nhà máy II sản xuất 40%. Tỷ lệ phế phẩm tương ứng là 2% và 5%. Chọn ngẫu nhiên một phế phẩm. Bước đầu tiên của lời giải Bayes là:",
+    "options": [
+      "Xác định các biến cố nguồn gốc sản phẩm và xác suất của chúng",
+      "Tính trung bình cộng hai tỷ lệ phế phẩm",
+      "Bỏ qua tỷ lệ sản xuất",
+      "Tính P(A+B)"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "BAYES_05",
+    "topic": "Bayes",
+    "question": "Phát biểu nào đúng về Bayes?",
+    "options": [
+      "Bayes dùng để cập nhật xác suất khi đã có thêm thông tin",
+      "Bayes chỉ áp dụng cho xúc xắc",
+      "Bayes luôn cho kết quả bằng xác suất ban đầu",
+      "Bayes không dùng trong y học"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "BAYES_06",
+    "topic": "Bayes",
+    "question": "Trong bài toán xét nghiệm bệnh, P(B/A) thường được hiểu là:",
+    "options": [
+      "Độ nhạy của xét nghiệm",
+      "Tỷ lệ mắc bệnh trong cộng đồng",
+      "Độ đặc hiệu",
+      "Tỷ lệ âm tính"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "BAYES_07",
+    "topic": "Bayes",
+    "question": "Cho P(A)=0.02; P(B/A)=0.95; P(B/Ā)=0.1. Công thức tính P(A/B) là:",
+    "options": [
+      "$$\\frac{P(A)P(B/A)}{P(B)}$$",
+      "$$P(A)P(B/A)$$",
+      "$$\\frac{P(B)}{P(A)}$$",
+      "$$P(A)+P(B)$$"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "BAYES_08",
+    "topic": "Bayes",
+    "question": "Một sinh viên nhớ công thức Bayes nhưng quên tính P(B). Sai lầm thường gặp nhất là:",
+    "options": [
+      "Lấy luôn P(B)=1",
+      "Tính P(B) bằng công thức xác suất toàn phần",
+      "Xác định đầy đủ các nguyên nhân có thể gây ra B",
+      "Thay số vào sau khi tính xong P(B)"
+    ],
+    "answer": 0
+  },
+  {
+    "id": "BER_01",
+    "topic": "Bernoulli",
+    "question": "Một loại vắc xin có tỷ lệ tạo miễn dịch thành công là 80%. Tiêm cho 5 người độc lập. Tính xác suất có đúng 3 người tạo được miễn dịch.",
+    "options": [
+      "$$n=5$$ $$k=3$$ $$p=0.8$$ $$q=0.2$$ $$P=C_{5}^{3}(0.8)^3(0.2)^2$$",
+      "$$P=0.8^3$$",
+      "$$P=C_{5}^{2}(0.8)^3(0.2)^2$$",
+      "$$P=C_{5}^{3}(0.8)^2(0.2)^3$$"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "BER_02",
+    "topic": "Bernoulli",
+    "question": "Tỷ lệ xét nghiệm dương tính là 10%. Thực hiện trên 4 bệnh nhân độc lập. Tính xác suất có đúng 1 người dương tính.",
+    "options": [
+      "$$n=4$$ $$k=1$$ $$p=0.1$$ $$q=0.9$$ $$P=C_{4}^{1}(0.1)^1(0.9)^3$$",
+      "$$P=C_{4}^{1}(0.1)^3(0.9)^1$$",
+      "$$P=0.1\\times0.9$$",
+      "$$P=C_{4}^{4}(0.1)^4$$"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "BER_03",
+    "topic": "Bernoulli",
+    "question": "Tỷ lệ khỏi bệnh của một phác đồ điều trị là 70%. Chọn ngẫu nhiên 6 bệnh nhân điều trị độc lập. Tính xác suất có đúng 5 người khỏi bệnh.",
+    "options": [
+      "$$n=6$$ $$k=5$$ $$p=0.7$$ $$q=0.3$$ $$P=C_{6}^{5}(0.7)^5(0.3)^1$$",
+      "$$P=C_{6}^{1}(0.7)^5(0.3)^1$$",
+      "$$P=(0.7)^5$$",
+      "$$P=(0.7)^5(0.3)^5$$"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "BER_04",
+    "topic": "Bernoulli",
+    "question": "Một kỹ thuật viên thực hiện đúng quy trình với xác suất 95%. Trong 3 lần thực hiện độc lập, tính xác suất đúng cả 3 lần.",
+    "options": [
+      "$$n=3$$ $$k=3$$ $$p=0.95$$ $$q=0.05$$ $$P=C_{3}^{3}(0.95)^3(0.05)^0$$",
+      "$$P=0.95^3+0.05^3$$",
+      "$$P=C_{3}^{2}(0.95)^3$$",
+      "$$P=0.95\\times3$$"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "BER_05",
+    "topic": "Bernoulli",
+    "question": "Một xét nghiệm có xác suất phát hiện đúng bệnh là 90%. Áp dụng cho 8 bệnh nhân mắc bệnh độc lập. Tính xác suất có đúng 6 trường hợp được phát hiện đúng.",
+    "options": [
+      "$$n=8$$ $$k=6$$ $$p=0.9$$ $$q=0.1$$ $$P=C_{8}^{6}(0.9)^6(0.1)^2$$",
+      "$$n=8$$ $$k=2$$ $$P=C_{8}^{2}(0.9)^6(0.1)^2$$",
+      "$$P=(0.9)^6$$",
+      "$$P=C_{8}^{6}(0.9)^2(0.1)^6$$"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "BER_06",
+    "topic": "Bernoulli",
+    "question": "Một loại thuốc mới có hiệu quả với xác suất 0.85. Điều trị cho 10 bệnh nhân độc lập. Xác suất để có đúng 8 bệnh nhân đáp ứng tốt với thuốc là:",
+    "options": [
+      "$$n=10$$ $$k=8$$ $$p=0.85$$ $$q=0.15$$ $$P=C_{10}^{8}(0.85)^8(0.15)^2$$",
+      "$$P=C_{10}^{2}(0.85)^8(0.15)^8$$",
+      "$$P=(0.85)^8$$",
+      "$$P=C_{10}^{8}(0.85)^2(0.15)^8$$"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "BER_07",
+    "topic": "Bernoulli",
+    "question": "Tỷ lệ sinh viên làm đúng một câu lý thuyết là 60%. Chọn ngẫu nhiên 7 sinh viên độc lập. Tính xác suất có đúng 4 sinh viên làm đúng.",
+    "options": [
+      "$$n=7$$ $$k=4$$ $$p=0.6$$ $$q=0.4$$ $$P=C_{7}^{4}(0.6)^4(0.4)^3$$",
+      "$$P=C_{7}^{3}(0.6)^4(0.4)^3$$",
+      "$$P=(0.6)^4$$",
+      "$$P=C_{7}^{4}(0.6)^3(0.4)^4$$"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "BER_08",
+    "topic": "Bernoulli",
+    "question": "Một bệnh viện ghi nhận xác suất xảy ra phản ứng phụ sau tiêm là 5%. Theo dõi 12 người được tiêm độc lập. Xác suất có đúng 2 người xuất hiện phản ứng phụ là:",
+    "options": [
+      "$$n=12$$ $$k=2$$ $$p=0.05$$ $$q=0.95$$ $$P=C_{12}^{2}(0.05)^2(0.95)^{10}$$",
+      "$$P=C_{12}^{10}(0.05)^2(0.95)^2$$",
+      "$$P=(0.05)^2$$",
+      "$$P=C_{12}^{2}(0.95)^2(0.05)^{10}$$"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "BER_09",
+    "topic": "Bernoulli",
+    "question": "Xác suất một mẫu bệnh phẩm bị nhiễm khuẩn là 0.2. Kiểm tra độc lập 5 mẫu. Tính xác suất có đúng 3 mẫu bị nhiễm khuẩn.",
+    "options": [
+      "$$n=5$$ $$k=3$$ $$p=0.2$$ $$q=0.8$$ $$P=C_{5}^{3}(0.2)^3(0.8)^2$$",
+      "$$P=C_{5}^{2}(0.2)^3(0.8)^2$$",
+      "$$P=(0.2)^3$$",
+      "$$P=C_{5}^{3}(0.8)^3(0.2)^2$$"
+    ],
+    "answer": 0
+  },
+
+  {
+    "id": "BER_10",
+    "topic": "Bernoulli",
+    "question": "Một loại test nhanh phát hiện đúng bệnh với xác suất 92%. Sử dụng test này trên 6 bệnh nhân mắc bệnh độc lập. Tính xác suất có đúng 5 bệnh nhân được phát hiện chính xác.",
+    "options": [
+      "$$\\text{Bước 1: }n=6$$ $$\\text{Bước 2: }k=5$$ $$\\text{Bước 3: }p=0.92,q=0.08$$ $$\\text{Bước 4: }P=C_{6}^{5}(0.92)^5(0.08)^1$$",
+      "$$n=6$$ $$k=1$$ $$P=C_{6}^{1}(0.92)^5(0.08)^1$$",
+      "$$P=(0.92)^5$$",
+      "$$P=C_{6}^{5}(0.08)^5(0.92)^1$$"
+    ],
+    "answer": 0
   }
+
+
+
 
 ]
