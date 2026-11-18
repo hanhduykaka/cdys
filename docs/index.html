@@ -16,7 +16,23 @@ window.MathJax={
 <style>
 *{box-sizing:border-box}
 body{font-family:Arial,sans-serif;max-width:1100px;margin:auto;padding:clamp(12px,3vw,24px);background:#f5f7fb;color:#172033}
-h1{font-size:clamp(1.5rem,4vw,2rem);line-height:1.25;margin:0 0 18px;overflow-wrap:anywhere}
+h1{font-size:clamp(1.5rem,4vw,2rem);line-height:1.25;margin:0;overflow-wrap:anywhere}
+.page-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin:0 0 18px}
+.tools-menu{position:relative;flex:0 0 auto}
+.tools-menu summary{display:grid;place-items:center;width:44px;height:44px;border:1px solid #cbd5e1;border-radius:10px;background:#fff;color:#334155;cursor:pointer;list-style:none;font-size:1.35rem}
+.tools-menu summary::-webkit-details-marker{display:none}
+.tools-menu summary:hover,.tools-menu[open] summary{background:#eaf1ff;border-color:#93c5fd}
+.tools-panel{position:absolute;z-index:20;top:calc(100% + 8px);right:0;width:min(460px,calc(100vw - 24px));max-height:calc(100dvh - 90px);overflow:auto;padding:16px;border:1px solid #dbe2ea;border-radius:12px;background:#fff;box-shadow:0 12px 32px rgba(15,23,42,.18)}
+.tools-panel h2{margin:0 0 12px;font-size:1rem}
+.tools-panel button{width:100%;margin-top:8px}
+.builder-form{display:grid;gap:12px;margin-top:12px}
+.builder-form textarea{width:100%;min-height:76px;padding:10px;border:1px solid #cbd5e1;border-radius:8px;font:inherit;line-height:1.45;resize:vertical}
+.builder-form .option-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.builder-form .answer-choice{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.builder-form .answer-choice label{display:flex;align-items:center;gap:6px;min-height:40px;padding:6px;border:1px solid #dbe2ea;border-radius:8px}
+.builder-status{font-size:.9rem;color:#475569;line-height:1.4;overflow-wrap:anywhere}
+.builder-status.error{color:#b91c1c}
+.builder-status.success{color:#166534}
 .card{background:#fff;padding:clamp(14px,2.5vw,20px);border-radius:12px;margin:12px 0;box-shadow:0 2px 8px rgba(15,23,42,.08);overflow-wrap:anywhere}
 .settings-card{display:grid;gap:16px}
 .settings-card h3{margin:0}
@@ -69,7 +85,61 @@ mjx-container{max-width:100%;overflow-x:auto;overflow-y:hidden}
 </style>
 </head>
 <body>
+<header class='page-header'>
 <h1 id='pageTitle'>🦠 Ôn tập</h1>
+<details class='tools-menu' id='toolsMenu'>
+<summary aria-label='Mở công cụ quản lý dữ liệu' title='Công cụ quản lý dữ liệu'>⚙️</summary>
+<div class='tools-panel'>
+<h2>Quản lý dữ liệu</h2>
+<button type='button' class='secondary' onclick='openImportPicker()'>Nhập JSON</button>
+<button type='button' class='secondary' onclick='exportQuestions()'>Xuất JSON</button>
+<button id='openQuestionBuilderButton' type='button' class='secondary' onclick='toggleQuestionBuilder()'>Thêm câu hỏi</button>
+<section id='questionBuilder' class='builder-form hidden'>
+<h2>Thêm câu hỏi</h2>
+<p class='builder-status'>Chọn bộ đề hiện có hoặc tạo bộ đề mới. Bộ đề máy chủ sẽ được sao chép vào thiết bị này trước khi lưu câu hỏi; tệp máy chủ không bị thay đổi. Dùng <code>$$...$$</code> cho công thức toán.</p>
+<div class='field'><label for='builderTarget'>Lưu câu hỏi vào</label>
+<select id='builderTarget' onchange='updateBuilderTarget()'>
+<option value='local'>Bộ đề trên thiết bị</option>
+<option value='server'>Sao chép bộ đề máy chủ vào thiết bị</option>
+<option value='new'>Tạo bộ đề mới</option>
+</select></div>
+<div id='builderLocalTarget' class='field'><label for='builderLocalSubject'>Bộ đề trên thiết bị</label>
+<select id='builderLocalSubject'></select></div>
+<div id='builderServerTarget' class='field hidden'><label for='builderServerSubject'>Bộ đề máy chủ để sao chép</label>
+<select id='builderServerSubject'></select></div>
+<div id='builderNewTarget' class='field hidden'><label for='builderNewSubject'>Tên bộ đề mới</label>
+<input id='builderNewSubject' type='text' maxlength='80' placeholder='Ví dụ: Xác suất thống kê'></div>
+<div class='field'><label for='builderCategory'>Chủ đề (không bắt buộc)</label>
+<input id='builderCategory' type='text' maxlength='80' placeholder='Ví dụ: Probability'></div>
+<div class='field'><label for='builderTopic'>Phần / chủ điểm (không bắt buộc)</label>
+<input id='builderTopic' type='text' maxlength='100' placeholder='Ví dụ: To hop'></div>
+<div class='field'><label for='builderDifficulty'>Độ khó (không bắt buộc)</label>
+<select id='builderDifficulty'>
+<option value=''>Không chọn</option><option value='easy'>Dễ</option><option value='medium'>Trung bình</option><option value='hard'>Khó</option>
+</select></div>
+<div class='field'><label for='builderQuestion'>Câu hỏi</label>
+<textarea id='builderQuestion' required placeholder='Nhập câu hỏi; công thức dùng $$...$$'></textarea></div>
+<div class='option-fields'>
+<div class='field'><label for='builderOptionA'>Lựa chọn A</label><textarea id='builderOptionA' required></textarea></div>
+<div class='field'><label for='builderOptionB'>Lựa chọn B</label><textarea id='builderOptionB' required></textarea></div>
+<div class='field'><label for='builderOptionC'>Lựa chọn C</label><textarea id='builderOptionC' required></textarea></div>
+<div class='field'><label for='builderOptionD'>Lựa chọn D</label><textarea id='builderOptionD' required></textarea></div>
+</div>
+<div class='field'><span class='field-label'>Đáp án đúng</span>
+<div class='answer-choice'>
+<label><input type='radio' name='builderAnswer' value='0' checked> A</label>
+<label><input type='radio' name='builderAnswer' value='1'> B</label>
+<label><input type='radio' name='builderAnswer' value='2'> C</label>
+<label><input type='radio' name='builderAnswer' value='3'> D</label>
+</div></div>
+<div class='field'><label for='builderExplanation'>Giải thích (không bắt buộc)</label>
+<textarea id='builderExplanation' placeholder='Có thể nhập công thức bằng $$...$$'></textarea></div>
+<div id='builderStatus' class='builder-status' role='status' aria-live='polite'></div>
+<button type='button' onclick='saveBuilderQuestion()'>Lưu câu hỏi vào thiết bị</button>
+</section>
+</div>
+</details>
+</header>
 <div class='card settings-card'>
 <h3>Chế độ</h3>
 <div class='mode-options'>
@@ -85,11 +155,9 @@ mjx-container{max-width:100%;overflow-x:auto;overflow-y:hidden}
 <div class='field'><label for='subject'>Môn học</label>
 <select id='subject' onchange='loadSubject()'></select></div>
 <div class='action-buttons'>
-<button type='button' class='secondary' onclick='document.getElementById("importFile").click()'>Nhập JSON</button>
-<input id='importFile' type='file' accept='.json,application/json' class='hidden' onchange='importQuestions(event)'>
-<button type='button' class='secondary' onclick='exportQuestions()'>Xuất JSON</button>
 <button id='practiceWrongButton' type='button' class='secondary hidden' onclick='practiceWrongQuestions()'>Luyện tập câu sai</button>
 </div>
+<input id='importFile' type='file' accept='.json,application/json' class='hidden' onchange='importQuestions(event)'>
 <div id='sourceMessage' role='status'></div>
 </div>
 <div class='filter-controls'>
@@ -195,6 +263,7 @@ async function initializeSubjects(){
  if(githubPagesRepository())await discoverGithubQuestions();
  else if(['localhost','127.0.0.1'].includes(location.hostname))await discoverLocalQuestions();
  await updateSubjects();
+ updateBuilderTarget();
  if(serverDiscoveryError&&['localhost','127.0.0.1'].includes(location.hostname))
   document.getElementById('sourceMessage').textContent=serverDiscoveryError;
 }
@@ -275,6 +344,136 @@ function updateWrongPracticeButton(){
  const button=document.getElementById('practiceWrongButton');
  button.textContent=`Luyện tập câu sai (${count})`;
  button.classList.toggle('hidden',count===0);
+ button.parentElement.classList.toggle('hidden',count===0);
+}
+function closeToolsMenu(){
+ document.getElementById('toolsMenu').open=false;
+}
+function openImportPicker(){
+ closeToolsMenu();
+ document.getElementById('importFile').click();
+}
+function toggleQuestionBuilder(){
+ const builder=document.getElementById('questionBuilder');
+ const opening=builder.classList.contains('hidden');
+ builder.classList.toggle('hidden',!opening);
+ document.getElementById('openQuestionBuilderButton').textContent=opening?'Đóng trình nhập câu hỏi':'Thêm câu hỏi';
+ if(opening)updateBuilderTarget();
+}
+function setBuilderStatus(message,type=''){
+ const status=document.getElementById('builderStatus');
+ status.textContent=message;
+ status.classList.remove('error','success');
+ if(type)status.classList.add(type);
+}
+function updateBuilderTarget(){
+ const target=document.getElementById('builderTarget').value;
+ document.getElementById('builderLocalTarget').classList.toggle('hidden',target!=='local');
+ document.getElementById('builderServerTarget').classList.toggle('hidden',target!=='server');
+ document.getElementById('builderNewTarget').classList.toggle('hidden',target!=='new');
+ const localSelect=document.getElementById('builderLocalSubject');
+ const selectedLocal=localSelect.value;
+ const localNames=Object.keys(getLocalSets());
+ localSelect.replaceChildren();
+ localNames.forEach(name=>localSelect.add(new Option(name,name)));
+ if(localNames.includes(selectedLocal))localSelect.value=selectedLocal;
+ else if(localNames.length)localSelect.value=localNames[0];
+ if(!localNames.length)localSelect.add(new Option('Chưa có bộ đề trên thiết bị',''));
+ const serverSelect=document.getElementById('builderServerSubject');
+ const selectedServer=serverSelect.value;
+ serverSelect.replaceChildren();
+ serverSubjects.forEach(subject=>serverSelect.add(new Option(subject.name,subject.file)));
+ if(serverSubjects.some(subject=>subject.file===selectedServer))serverSelect.value=selectedServer;
+ else if(serverSubjects.length)serverSelect.value=serverSubjects[0].file;
+ if(target==='local'&&!localNames.length)
+  setBuilderStatus('Chưa có bộ đề trên thiết bị. Chọn bộ đề máy chủ để sao chép hoặc tạo bộ đề mới.');
+ else if(target==='server')
+  setBuilderStatus('Bộ đề máy chủ sẽ được sao chép vào thiết bị khi bạn lưu. Câu hỏi gốc trên máy chủ không bị thay đổi.');
+ else setBuilderStatus('');
+}
+function normalizeQuestionText(value){
+ return value.normalize('NFKC').trim().replace(/\s+/g,' ').toLocaleLowerCase();
+}
+function createQuestionId(existing){
+ const numericIds=existing.map(question=>question.id).filter(id=>Number.isSafeInteger(id));
+ if(numericIds.length===existing.length)return Math.max(0,...numericIds)+1;
+ let id;
+ do{id=`local_${Date.now().toString(36)}_${Math.random().toString(36).slice(2,7)}`;}
+ while(existing.some(question=>question.id===id));
+ return id;
+}
+async function saveBuilderQuestion(){
+ try{
+  const questionText=document.getElementById('builderQuestion').value.trim();
+  const options=['A','B','C','D'].map((letter,index)=>document.getElementById(`builderOption${letter}`).value.trim());
+  if(!questionText||options.some(option=>!option)){
+   setBuilderStatus('Nhập câu hỏi và đủ bốn lựa chọn A, B, C, D trước khi lưu.','error');
+   return;
+  }
+  const target=document.getElementById('builderTarget').value;
+  const sets=getLocalSets();
+  let subjectName,questionsToSave;
+  if(target==='local'){
+   subjectName=document.getElementById('builderLocalSubject').value;
+   if(!subjectName||!Array.isArray(sets[subjectName]))
+    throw new Error('Chọn một bộ đề đã lưu trên thiết bị hoặc tạo bộ đề mới.');
+   questionsToSave=sets[subjectName];
+  }else if(target==='new'){
+   subjectName=document.getElementById('builderNewSubject').value.trim();
+   if(!subjectName)throw new Error('Nhập tên cho bộ đề mới.');
+   if(Array.isArray(sets[subjectName])){
+    if(!confirm(`"${subjectName}" đã có trên thiết bị. Thêm câu hỏi vào bộ đề đó?`))return;
+    questionsToSave=sets[subjectName];
+   }else questionsToSave=[];
+  }else{
+   const filename=document.getElementById('builderServerSubject').value;
+   const serverSubject=serverSubjects.find(subject=>subject.file===filename);
+   if(!serverSubject)throw new Error('Chọn một bộ đề máy chủ hợp lệ.');
+   subjectName=serverSubject.name;
+   if(Array.isArray(sets[subjectName]))questionsToSave=sets[subjectName];
+   else{
+    const response=await fetch(encodeURIComponent(filename),{cache:'no-store'});
+    if(!response.ok)throw new Error(`Không thể sao chép bộ đề máy chủ (${response.status}).`);
+    const serverQuestions=await response.json();
+    if(!Array.isArray(serverQuestions)||!serverQuestions.every(isQuestion))
+     throw new Error('Bộ đề máy chủ không đúng định dạng.');
+    questionsToSave=serverQuestions;
+   }
+  }
+  const normalizedQuestion=normalizeQuestionText(questionText);
+  const duplicate=questionsToSave.find(question=>
+   normalizeQuestionText(question.question)===normalizedQuestion
+  );
+  if(duplicate&&!confirm(`Câu hỏi này có vẻ đã tồn tại trong "${subjectName}". Bạn vẫn muốn thêm một bản sao?`)){
+   setBuilderStatus('Không thêm câu hỏi trùng lặp. Bạn có thể chỉnh sửa nội dung rồi thử lại.');
+   return;
+  }
+  const question={
+   id:createQuestionId(questionsToSave),
+   question:questionText,
+   options,
+   answer:Number(document.querySelector('input[name=builderAnswer]:checked').value),
+   explanation:document.getElementById('builderExplanation').value.trim()
+  };
+  const category=document.getElementById('builderCategory').value.trim();
+  const topic=document.getElementById('builderTopic').value.trim();
+  const difficulty=document.getElementById('builderDifficulty').value;
+  if(category)question.category=category;
+  if(topic)question.topic=topic;
+  if(difficulty)question.difficulty=difficulty;
+  questionsToSave.push(question);
+  sets[subjectName]=questionsToSave;
+  localStorage.setItem(localKey,JSON.stringify(sets));
+  document.getElementById('source').value='local';
+  await updateSubjects(subjectName);
+  setBuilderStatus(`Đã lưu câu hỏi vào "${subjectName}" trên thiết bị. Tổng số: ${questionsToSave.length}.`,'success');
+  document.getElementById('builderQuestion').value='';
+  ['A','B','C','D'].forEach(letter=>document.getElementById(`builderOption${letter}`).value='');
+  document.getElementById('builderExplanation').value='';
+  document.querySelector('input[name=builderAnswer][value="0"]').checked=true;
+ }catch(error){
+  setBuilderStatus(error.message||'Không thể lưu câu hỏi.','error');
+ }
 }
 function practiceWrongQuestions(){
  try{
@@ -440,9 +639,10 @@ async function importQuestions(event){
   updateSubjects(name);
   document.getElementById('sourceMessage').textContent=`Đã nhập ${data.length} câu hỏi vào "${name}" trên thiết bị này.`;
  }catch(error){document.getElementById('sourceMessage').textContent=error.message||'Không thể nhập tệp JSON.';}
- finally{event.target.value='';}
+ finally{event.target.value='';closeToolsMenu();}
 }
 function exportQuestions(){
+ closeToolsMenu();
  if(!allQuestions.length){document.getElementById('sourceMessage').textContent='Không có câu hỏi để xuất.';return;}
  const blob=new Blob([JSON.stringify(allQuestions,null,2)],{type:'application/json'});
  const link=document.createElement('a');
